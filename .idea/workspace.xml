@@ -20,33 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27ae4c1a-a6d7-4df3-a0a5-5674e14fc9b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeathCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Callbacks/DeathCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Empty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Empty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroicUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/HeroicUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InputProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/Input/InputProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MessageCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Callbacks/MessageCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumericGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/NumericGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerDeathCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Callbacks/PlayerDeathCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/TileFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TilesComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/TilesComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Trap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
