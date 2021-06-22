@@ -1,3 +1,7 @@
+package Backend.Tiles.Units.Enemies;
+
+import Backend.Tiles.Units.Enemy;
+
 public class Trap extends Enemy {
     int visibleTime;
     int invisbleTime;

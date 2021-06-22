@@ -1,3 +1,12 @@
+package Backend.Tiles.Units;
+
+import Backend.Callbacks.MessageCallback;
+import Backend.Callbacks.PlayerDeathCallback;
+import Backend.Tiles.Unit;
+import Backend.Utils.Position;
+import Frontend.Action;
+import Frontend.Input.InputProvider;
+
 public abstract class Player extends Unit implements HeroicUnit {
     public static final char playerTile = '@';
     protected static final int REQ_EXP = 50;
@@ -66,7 +75,7 @@ public abstract class Player extends Unit implements HeroicUnit {
         PlayerDeathCallback.call();
     }
 
-    // Player level up
+    // Backend.Tiles.Units.Player level up
     protected void levelUp(){
 
     }

@@ -1,3 +1,9 @@
+package Backend.Tiles;
+
+import Backend.Tile;
+import Backend.Tiles.Unit;
+import Backend.Utils.Position;
+
 public class Empty extends Tile {
     public Empty(Position position) {
         super('.',position);

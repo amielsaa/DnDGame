@@ -1,3 +1,5 @@
+package Backend.Utils;
+
 public class Position  implements Comparable<Position>{
     private int row ;
     private int col ;

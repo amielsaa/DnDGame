@@ -1,9 +1,20 @@
+package Backend.Tiles;
+
+import Backend.Callbacks.DeathCallback;
+import Backend.Callbacks.MessageCallback;
+import Backend.Tiles.Units.Enemy;
+import Backend.Tiles.Units.Player;
+import Backend.Tile;
+import Backend.Utils.NumericGenerator;
+import Backend.Utils.Position;
+import Backend.Utils.Resource;
+
 public abstract class Unit extends Tile {
     // A singleton object for generating numbers - NumericGenerator is an interface, implemented by a RandomGenerator and a DeterministicGenerator
     protected static final NumericGenerator r = NumericGenerator.getInstance();
     protected MessageCallback messageCallback;
-    protected DeathCallback deathCallback;
-    protected String name;
+    public DeathCallback deathCallback;
+    public String name;
     protected Resource resource;
     protected int attack;
     protected int defense;

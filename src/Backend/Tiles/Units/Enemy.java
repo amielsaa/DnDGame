@@ -1,3 +1,7 @@
+package Backend.Tiles.Units;
+
+import Backend.Tiles.Unit;
+
 public class Enemy extends Unit {
     int exp;
     protected Enemy(char tile, String name, int healthCapacity, int attack, int defense,int exp) {

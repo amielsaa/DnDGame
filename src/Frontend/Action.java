@@ -1,3 +1,5 @@
+package Frontend;
+
 public enum Action {
     Up,
     Down,

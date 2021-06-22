@@ -1,3 +1,7 @@
+package Backend;
+
+import Backend.Tile;
+
 import java.util.Comparator;
 
 public class TilesComparator implements Comparator<Tile> {

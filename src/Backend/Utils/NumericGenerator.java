@@ -1,6 +1,8 @@
+package Backend.Utils;
+
 import java.util.Random;
 
-class NumericGenerator {
+public class NumericGenerator {
     private static NumericGenerator instance;
     private Random rnd;
 

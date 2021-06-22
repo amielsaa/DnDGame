@@ -1,3 +1,5 @@
+package Backend.Utils;
+
 public class Resource {
     private Integer currentHealth;
     private Integer healthCapacity;

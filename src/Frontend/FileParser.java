@@ -1,9 +1,14 @@
-import java.io.BufferedReader;
+package Frontend;
+
+import Backend.Tiles.Empty;
+import Backend.Tiles.Units.Enemy;
+import Backend.Tiles.Units.Player;
+import Backend.Tiles.Units.Players.Warrior;
+import Backend.Tiles.Wall;
+import Backend.Utils.Position;
+
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.nio.file.Files;
-import java.util.ArrayList;
 import java.util.List;
 
 class FileParser {

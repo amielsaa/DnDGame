@@ -1,3 +1,8 @@
+package Frontend;
+
+import Backend.Tile;
+import Backend.Utils.Position;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -26,7 +31,7 @@ class GameBoard {
         }
         return null;
     }
-    public void SwitchPositions(Tile tile1,Tile tile2){
+    public void SwitchPositions(Tile tile1, Tile tile2){
         int index1=getIndex(tile1);
         int index2=getIndex(tile2);
         int temp=index1;
@@ -41,7 +46,7 @@ class GameBoard {
     }
 
     public void Printall(){
-                //tiles.sort(new TilesComparator());
+                //tiles.sort(new Backend.TilesComparator());
                 for(Tile tile : tiles){
                     if (tile.position.getCol() == 0)
                         System.out.println();

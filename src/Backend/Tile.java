@@ -1,8 +1,13 @@
+package Backend;
+
+import Backend.Tiles.Unit;
+import Backend.Utils.Position;
+
 public abstract class Tile implements Comparable<Tile> {
     protected char tile;
-    protected Position position;
+    public Position position;
 
-    protected Tile(char tile,Position position){
+    protected Tile(char tile, Position position){
         this.tile = tile;
         this.position=position;
     }
