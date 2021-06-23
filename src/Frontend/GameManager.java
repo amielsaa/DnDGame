@@ -39,8 +39,8 @@ public class GameManager {
             levelFiles = Arrays.stream(levelsDir.listFiles())
                     .filter(s -> s.getName().matches("^level\\d+\\.txt$"))
                     .collect(Collectors.toList());
-
-        for(int i =0;i<levelFiles.size();i++) {
+        boolean won = false;
+        for(int i =0;i<levelFiles.size() & !won;i++) {
             //levels loop
             gameLevel.loadLevel(levelFiles.get(i));
             GameBoard gameBoard  = gameLevel.getBoard();
@@ -49,6 +49,11 @@ public class GameManager {
             //game loop
             while(player.alive() && gameLevel.enemies.size()>0){
                 gameLevel.tick(sc.next());
+            }
+
+            won = player.alive() & gameLevel.enemies.size()== 0;
+            if(won & levelFiles.size() == i-1){
+                System.out.println("You won!");
             }
 
         }
