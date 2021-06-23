@@ -40,15 +40,17 @@ public class GameManager {
                     .filter(s -> s.getName().matches("^level\\d+\\.txt$"))
                     .collect(Collectors.toList());
         boolean won = false;
-        for(int i =0;i<levelFiles.size() & !won;i++) {
+        for(int i = 0;i<levelFiles.size() & !won;i++) {
             //levels loop
+
             gameLevel.loadLevel(levelFiles.get(i));
             GameBoard gameBoard  = gameLevel.getBoard();
             Player player = gameLevel.getPlayer();
 
             //game loop
             while(player.alive() && gameLevel.enemies.size()>0){
-                gameLevel.tick(sc.next());
+                String input = sc.next();
+                gameLevel.tick(input);
             }
 
             won = player.alive() & gameLevel.enemies.size()== 0;
