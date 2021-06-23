@@ -10,4 +10,11 @@ public class Monster extends Enemy {
 
         this.vision=vision;
     }
+    public void processStep() {
+
+
+    }
+    public void inRange(){
+        
+    }
 }
