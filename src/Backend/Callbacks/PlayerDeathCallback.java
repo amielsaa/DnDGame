@@ -2,8 +2,8 @@ package Backend.Callbacks;
 
 import java.util.List;
 
-  public interface PlayerDeathCallback {
-     static void call(){}
+public interface PlayerDeathCallback {
+     void call();
 
 
 

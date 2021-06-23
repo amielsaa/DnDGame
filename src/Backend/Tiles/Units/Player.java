@@ -74,7 +74,7 @@ public abstract class Player extends Unit implements HeroicUnit {
     public void onDeath() {
         messageCallback.send("You lost. but you can always try again");
         // Use deathCallback to alert the level manager
-        PlayerDeathCallback.call();
+        deathCallback.call();
     }
 
     // Backend.Tiles.Units.Player level up
@@ -140,5 +140,8 @@ public abstract class Player extends Unit implements HeroicUnit {
 
     public void setInputProvider(InputProvider inputProvider) {
         this.inputProvider = inputProvider;
+    }
+    public void setPlayerDeathCallBack(PlayerDeathCallback deathCallBack) {
+        this.deathCallback  = deathCallBack;
     }
 }

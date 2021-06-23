@@ -35,7 +35,7 @@ public class FileParser {
                         break;
                     case '@':
                         this.player = player;
-                        this.player.initialize(p);
+                        this.player.initialize(p,(msg) -> System.out.println(msg),()->m.onPlayerDeath() ,()->'s');
                         this.player.setPosition(p);
                         board.add(this.player);
                         break;
