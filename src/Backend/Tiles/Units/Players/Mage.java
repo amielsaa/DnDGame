@@ -57,7 +57,7 @@ public class Mage extends Player {
         else{ messageCallback.send(this.name+" doesn't have enough mana"+"\n");}
     }
     @Override
-    public void processStep() {
+    public void processStep(Player p) {
 
     }
     public void levelUp()

@@ -47,7 +47,7 @@ public class GameLevel {
     public void tick(String action){
         Position nextPosition = getInteractPosition(action);
         if(action.length()==1 && nextPosition!=null){
-            //player.setInputProvider(()-> action.charAt(0));
+            player.setInputProvider(()-> action.charAt(0));
 
             Tile tileToInteract = gameBoard.findTile( new Position(player.getPosition().getRow()+nextPosition.getRow(),player.getPosition().getCol()+nextPosition.getCol()) );
             player.interact(tileToInteract);
@@ -55,9 +55,17 @@ public class GameLevel {
                 gameBoard.SwitchPositions(tileToInteract,player);
             }
 
+            enemyProcessStep();
+            System.out.println(player.tickDescribe());
             gameBoard.Printall();
         }
 
+    }
+
+    private void enemyProcessStep() {
+        for(Enemy e : enemies) {
+            e.processStep(player);
+        }
     }
 
 

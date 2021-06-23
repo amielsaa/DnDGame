@@ -44,7 +44,7 @@ public class Warrior extends Player {
     }
 
     @Override
-    public void processStep() {
+    public void processStep(Player p) {
     }
     public void levelUp()
     {

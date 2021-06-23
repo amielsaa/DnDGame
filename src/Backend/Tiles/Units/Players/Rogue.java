@@ -37,7 +37,7 @@ public class Rogue extends Player {
     }
 
     @Override
-    public void processStep() {
+    public void processStep(Player p) {
 
     }
     public void levelUp()
