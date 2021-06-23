@@ -16,28 +16,34 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27ae4c1a-a6d7-4df3-a0a5-5674e14fc9b4" name="Default Changelist" comment="">
+    <list default="true" id="8714bc18-4d46-439b-b2c3-2d18fbdadc44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/HeroicUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/HeroicUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/MageResorce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/MageResorce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/WarriorResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/WarriorResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/FileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/FileParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/PlayerSelectionMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/PlayerSelectionMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/TileFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/TileFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/FileParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/PlayerSelectionMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/PlayerSelectionMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/TileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/TileFactory.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +69,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -71,18 +77,6 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.GameManager">
     <configuration name="GameLevel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -96,6 +90,7 @@
     <configuration name="GameManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Frontend.GameManager" />
       <module name="project D&amp;D" />
+      <option name="PROGRAM_PARAMETERS" value="levels_dir" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Frontend.*" />
@@ -119,15 +114,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.GameLevel" />
+      <item itemvalue="Application.GameManager" />
+      <item itemvalue="Application.Position" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GameManager" />
-        <item itemvalue="Application.GameLevel" />
         <item itemvalue="Application.Position" />
+        <item itemvalue="Application.GameLevel" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -147,28 +147,53 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="COLUMN_ORDER" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="SettingsEditor" timestamp="1624396037687">
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624452899166">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624452899166" />
+    <state x="740" y="230" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1624452892198">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="230" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624452892198" />
+    <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1624457422535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624457422535" />
+    <state width="1860" height="279" key="GridCell.Tab.0.center" timestamp="1624457422535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624457422535" />
+    <state width="1860" height="279" key="GridCell.Tab.0.left" timestamp="1624457422535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624457422535" />
+    <state width="1860" height="279" key="GridCell.Tab.0.right" timestamp="1624457422535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624457422535" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1624452858564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624396037687" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Frontend/GameLevel.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1624452858564" />
   </component>
 </project>

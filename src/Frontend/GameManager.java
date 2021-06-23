@@ -20,10 +20,11 @@ public class GameManager {
     public static void main(String[] args) {
 
         //player selection
+        Scanner sc = new Scanner(System.in);
         GameLevel gameLevel = GameLevel.getInstance();
         PlayerSelectionMenu menu  = new PlayerSelectionMenu();
         menu.printMenu();
-        Scanner sc = new Scanner(System.in);
+
 
         if (args.length<=0) {
             System.out.print("main is a void");
@@ -42,7 +43,12 @@ public class GameManager {
             //levels loop
             gameLevel.loadLevel(levelFiles.get(i));
             GameBoard gameBoard  = gameLevel.getBoard();
+            Player player = gameLevel.getPlayer();
 
+            //game loop
+            while(player.alive() && gameLevel.enemies.size()>0){
+                gameLevel.tick(sc.next());
+            }
 
         }
 

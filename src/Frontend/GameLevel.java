@@ -9,6 +9,7 @@ import Backend.Utils.Position;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.io.File;
@@ -20,7 +21,7 @@ public class GameLevel {
 
     private GameBoard gameBoard;
     private Player player;
-    private List<Enemy> enemies;
+    public List<Enemy> enemies;
     public static FileParser fileParser;
     private static GameLevel instance;
     //TODO
@@ -28,6 +29,7 @@ public class GameLevel {
 
     private GameLevel() {
         fileParser = new FileParser();
+        enemies = new ArrayList<>();
     }
 
     public static GameLevel getInstance() {
@@ -39,7 +41,11 @@ public class GameLevel {
     public FileParser getFileParser(){
         return fileParser;
     }
-    public void tick(){
+    public void tick(String action){
+        Action act = convertToAction(action);
+        if(action.length()>1 && act!=null){
+            player.setInputProvider(()->{return act;});
+        }
 
 
     }
@@ -51,39 +57,61 @@ public class GameLevel {
 
     }
 
+    public Player getPlayer(){
+        return player;
+    }
     public GameBoard getBoard() {
         return gameBoard;
     }
     public void setPlayer(Player player) {
-        this.player = this.player;
+        this.player = player;
+    }
+
+    public Action convertToAction(String action) {
+        switch (action.toLowerCase().charAt(0)) {
+            case 'a':
+                return Action.Left;
+            case 'd':
+                return Action.Right;
+            case 's':
+                return Action.Down;
+            case 'w':
+                return Action.Up;
+            case 'e':
+                return Action.CastAbility;
+            default:
+                return null;
+        }
     }
     public void loadLevel(File level) {
 
 
 
 
-        gameBoard = fileParser.parseLevel(level);
+        gameBoard = fileParser.parseLevel(level, player);
         gameBoard.Printall();
 
-        String c ="";
-        Scanner scanner= new Scanner(System.in);
 
-        Player p=fileParser.player;
-        while(!c.equals("q")) {
-            c=scanner.next();
-            if(c.equals("d")) {
-                System.out.println(p.position);
-                System.out.println(p.position.getRow());
-                Tile t =gameBoard.findTile(new Position(p.position.getRow(),p.position.getCol()+1));
-                if(t!= null)
-                    p.SwitchPosition(t);
-                gameBoard.SwitchPositions(p,t);
-            }
-            gameBoard.Printall();
 
-        }
-        p.setMessageCallback((s)->{System.out.print(s);});
-
+//        String c ="";
+//        Scanner scanner= new Scanner(System.in);
+//
+//        Player p=fileParser.player;
+//        while(!c.equals("q")) {
+//            c=scanner.next();
+//            if(c.equals("d")) {
+//                System.out.println(p.position);
+//                System.out.println(p.position.getRow());
+//                Tile t =gameBoard.findTile(new Position(p.position.getRow(),p.position.getCol()+1));
+//                if(t!= null)
+//                    p.SwitchPosition(t);
+//                gameBoard.SwitchPositions(p,t);
+//            }
+//            gameBoard.Printall();
+//
+//        }
+//        p.setMessageCallback((s)->{System.out.print(s);});
+//
 //        Player x = new Warrior("ariya", 500, 500, 500);
 //        x.setMessageCallback((s)->{System.out.print(s);});
 //        Enemy e=new Monster('k',"fuck",500,500,500,3,3);
