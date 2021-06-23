@@ -16,7 +16,7 @@ public class Mage extends Player {
     private int hitsCount;
     private int abilityRange;
 
-    protected Mage(String name, int healthCapacity, int attack, int defense, int mana, int cost, int spellPower, int hitsCount, int abilityRange)
+    public Mage(String name, int healthCapacity, int attack, int defense, int mana, int cost, int spellPower, int hitsCount, int abilityRange)
     {
         super(name, healthCapacity, attack, defense);
         mageResorce = new MageResorce(healthCapacity,healthCapacity,mana, cost);

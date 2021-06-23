@@ -9,6 +9,7 @@ import Backend.Utils.Position;
 
 import java.io.File;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -72,11 +73,13 @@ public class GameManager {
 //        }
 //        p.setMessageCallback((s)->{System.out.print(s);});
 //
-//        Player x = new Warrior("ariya", 500, 500, 500);
-//        x.setMessageCallback((s)->{System.out.print(s);});
-//        Enemy e=new Monster('k',"fuck",500,500,500,3,3);
-//        e.setMessageCallback((s)->{System.out.print(s);});
-//        e.visit(x);
-//        x.CastAbility();
+        Player x = new Warrior("ariya", 500, 500, 500,3);
+        x.setMessageCallback((s)->{System.out.print(s);});
+        Enemy e=new Monster('k',"fuck",500,500,500,3,3);
+        e.setMessageCallback((s)->{System.out.print(s);});
+        e.visit(x);
+        List<Enemy> enemies= new LinkedList<Enemy>();
+        enemies.add(e);
+        x.CastAbility(enemies);
     }
 }

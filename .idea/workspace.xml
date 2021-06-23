@@ -20,20 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27ae4c1a-a6d7-4df3-a0a5-5674e14fc9b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/PlayerSelectionMenu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frontend/PlayerSelectionMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/HeroicUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/HeroicUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/MageResorce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/MageResorce.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/WarriorResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/WarriorResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/FileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/FileParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Utils/RougeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/RougeResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Utils/WarriorResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/WarriorResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frontend/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/FileParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frontend/Input/InputProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/Input/InputProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/TileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/TileFactory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,11 +84,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Position">
+  <component name="RunManager" selected="Application.GameManager">
     <configuration name="GameLevel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Frontend.GameLevel" />
       <module name="project D&amp;D" />
       <option name="PROGRAM_PARAMETERS" value="levels_Dir" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Frontend.GameManager" />
+      <module name="project D&amp;D" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,8 +121,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Position" />
+        <item itemvalue="Application.GameManager" />
         <item itemvalue="Application.GameLevel" />
+        <item itemvalue="Application.Position" />
       </list>
     </recent_temporary>
   </component>
@@ -144,5 +159,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624396037687" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Frontend/GameLevel.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

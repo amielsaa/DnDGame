@@ -18,7 +18,7 @@ public class TileFactory {
     private Player selected;
 
     public TileFactory(){
-        playersList = initPlayers();
+        //playersList = initPlayers();
         enemiesMap = initEnemies();
     }
 
@@ -39,17 +39,17 @@ public class TileFactory {
         return enemies.stream().collect(Collectors.toMap(s -> s.get().getTile(), Function.identity()));
     }
 
-    private List<Supplier<Backend.Tiles.Units.Player>> initPlayers() {
-        return Arrays.asList(
-              //  () -> new Backend.Tiles.Units.Players.Warrior("Jon Snow", 300, 30, 4, 3),
-              //  () -> new Backend.Tiles.Units.Players.Warrior("The Hound", 400, 20, 6, 5),
-                () -> new Backend.Tiles.Units.Players.Mage("Melisandre", 100, 5, 1, 300, 30, 15, 5, 6),
-                () -> new Backend.Tiles.Units.Players.Mage("Thoros of Myr", 250, 25, 4, 150, 20, 20, 3, 4),
-                () -> new Backend.Tiles.Units.Players.Rogue("Arya Stark", 150, 40, 2, 20),
-                () -> new Backend.Tiles.Units.Players.Rogue("Bronn", 250, 35, 3, 50),
-
-        );
-    }
+//    private List<Supplier<Backend.Tiles.Units.Player>> initPlayers() {
+//        return Arrays.asList(
+//                () -> new Backend.Tiles.Units.Players.Warrior("Jon Snow", 300, 30, 4, 3),
+//                () -> new Backend.Tiles.Units.Players.Warrior("The Hound", 400, 20, 6, 5),
+//                () -> new Backend.Tiles.Units.Players.Mage("Melisandre", 100, 5, 1, 300, 30, 15, 5, 6),
+//                () -> new Backend.Tiles.Units.Players.Mage("Thoros of Myr", 250, 25, 4, 150, 20, 20, 3, 4),
+//                () -> new Backend.Tiles.Units.Players.Rogue("Arya Stark", 150, 40, 2, 100 ,20),
+//                () -> new Backend.Tiles.Units.Players.Rogue("Bronn", 250, 35, 3, 100,50)
+//
+//        );
+//    }
 
     public List<Player> listPlayers(){
         return playersList.stream().map(Supplier::get).collect(Collectors.toList());
