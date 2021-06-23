@@ -24,7 +24,7 @@ public class Rogue extends Player {
                 int distance = this.CheckDistance(enemy);
                 if (distance <2 )
                 {
-                    enemy.acceptAbility(attack);
+                    enemy.acceptAbility(this,attack);
                     hits = hits+1;
                 }
             }
