@@ -7,7 +7,7 @@ import Backend.Utils.MageResorce;
 public class Mage extends Player {
     public MageResorce resorce;
 
-    protected Mage(String name, int healthCapacity, int attack, int defense, int mana, int cost) {
+    public Mage(String name, int healthCapacity, int attack, int defense, int mana, int cost) {
         super(name, healthCapacity, attack, defense);
         resorce = new MageResorce(healthCapacity,healthCapacity,mana, cost);
     }

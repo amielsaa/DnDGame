@@ -7,7 +7,7 @@ import Backend.Utils.RougeResource;
 public class Rogue extends Player {
 
     public RougeResource resource;
-    protected Rogue(String name, int healthCapacity, int attack, int defense, int energy ,int cost) {
+    public Rogue(String name, int healthCapacity, int attack, int defense, int energy, int cost) {
         super(name, healthCapacity, attack, defense);
         resource = new RougeResource(healthCapacity,healthCapacity,energy, cost);
     }
