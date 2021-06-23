@@ -23,4 +23,11 @@ public class Position  implements Comparable<Position>{
             return other.row - row;
         return other.col - col;
     }
+    public int checkDistance(Position position){
+        return (int) Math.round(Math.sqrt(Math.pow(this.col-position.col,2)+Math.pow(this.row-position.row,2)));
+    }
+
+
 }
+
+
