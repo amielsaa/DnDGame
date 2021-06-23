@@ -22,7 +22,7 @@ class FileParser {
             throw new IllegalArgumentException("could not load level");
         }
         GameBoard board = new GameBoard();
-        GameLevel m = new GameLevel();
+        GameLevel m = GameLevel.getInstance();
         Player player;
         for (int i = 0; i < arr.size(); i++) {
             for (int j = 0; j < arr.get(i).length(); j++) {
