@@ -10,7 +10,7 @@ import java.util.List;
 public class Rogue extends Player {
 
     public RougeResource rougeResource;
-    protected Rogue(String name, int healthCapacity, int attack, int defense, int energy ,int cost) {
+    public Rogue(String name, int healthCapacity, int attack, int defense, int energy, int cost) {
         super(name, healthCapacity, attack, defense);
         rougeResource = new RougeResource(healthCapacity,healthCapacity,energy, cost);
     }
@@ -22,17 +22,16 @@ public class Rogue extends Player {
             for (Enemy enemy : e)
             {
                 int distance = this.CheckDistance(enemy);
-                if (distance <2)
+                if (distance <2 )
                 {
                     enemy.acceptAbility(attack);
                     hits = hits+1;
                 }
             }
             rougeResource.setEnergy();
-            messageCallback.send(this.name + "have used Fan of Knifes, "+hits+" enemies were hit for "+attack+" damage."+"\n");
+            messageCallback.send(this.name + "have used Fan of Knifes, "+hits+" enemies were hit."+"\n");
         }
         else{ messageCallback.send(this.name+" doesn't have enough energy"+"\n");}
-
     }
 
     @Override

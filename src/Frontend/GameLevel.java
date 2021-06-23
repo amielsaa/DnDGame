@@ -23,6 +23,7 @@ public class GameLevel {
     private Player player;
     public List<Enemy> enemies;
     public static FileParser fileParser;
+
     private static GameLevel instance;
     //TODO
     //המשחק בנוי על לעשות לולאת while אחת גדולה שכל עוד השחקן לא מת אני מקבל קלט  תנועה או קאסט אביליטי וכל השאר בהתאם.
@@ -128,43 +129,43 @@ public class GameLevel {
     }
 
 //    public static void main(String[] args) {
-//        if (args.length<=0) {
-//            System.out.print("main is a void");
-//            return;
-//        }
-//        String folder=args[0];
-//        File levelsDir = new File(folder);
-//        List<File> levelFiles = null;
-//        if (levelsDir.exists())
-//            levelFiles = Arrays.stream(levelsDir.listFiles())
-//                    .filter(s -> s.getName().matches("^level\\d+\\.txt$"))
-//                   .collect(Collectors.toList());
-//        GameBoard board = fileParser.parseLevel(levelFiles.get(0));
-//
-//        String c ="";
-//        Scanner scanner= new Scanner(System.in);
-//        board.Printall();
-//        Player p=fileParser.player;
-//        while(!c.equals("q")) {
-//            c=scanner.next();
-//            if(c.equals("d")) {
-//                System.out.println(p.position);
-//                System.out.println(p.position.getRow());
-//                Tile t =board.findTile(new Position(p.position.getRow(),p.position.getCol()+1));
-//                if(t!= null)
-//                p.SwitchPosition(t);
-//                board.SwitchPositions(p,t);
-//            }
-//                board.Printall();
-//
-//        }
-//        p.setMessageCallback((s)->{System.out.print(s);});
-//
-//        Player x = new Warrior("ariya", 500, 500, 500);
-//        x.setMessageCallback((s)->{System.out.print(s);});
-//        Enemy e=new Monster('k',"fuck",500,500,500,3,3);
-//        e.setMessageCallback((s)->{System.out.print(s);});
-//        e.visit(x);
-//        x.CastAbility();
-//    }
+////        if (args.length<=0) {
+////            System.out.print("main is a void");
+////            return;
+////        }
+////        String folder=args[0];
+////        File levelsDir = new File(folder);
+////        List<File> levelFiles = null;
+////        if (levelsDir.exists())
+////            levelFiles = Arrays.stream(levelsDir.listFiles())
+////                    .filter(s -> s.getName().matches("^level\\d+\\.txt$"))
+////                   .collect(Collectors.toList());
+////        GameBoard board = fileParser.parseLevel(levelFiles.get(0));
+////
+////        String c ="";
+////        Scanner scanner= new Scanner(System.in);
+////        board.Printall();
+////        Player p=fileParser.player;
+////        while(!c.equals("q")) {
+////            c=scanner.next();
+////            if(c.equals("d")) {
+////                System.out.println(p.position);
+////                System.out.println(p.position.getRow());
+////                Tile t =board.findTile(new Position(p.position.getRow(),p.position.getCol()+1));
+////                if(t!= null)
+////                p.SwitchPosition(t);
+////                board.SwitchPositions(p,t);
+////            }
+////                board.Printall();
+////
+////        }
+////        p.setMessageCallback((s)->{System.out.print(s);});
+////
+////        Player x = new Warrior("ariya", 500, 500, 500);
+////        x.setMessageCallback((s)->{System.out.print(s);});
+////        Enemy e=new Monster('k',"fuck",500,500,500,3,3);
+////        e.setMessageCallback((s)->{System.out.print(s);});
+////        e.visit(x);
+////        x.CastAbility();
+////    }
 }
