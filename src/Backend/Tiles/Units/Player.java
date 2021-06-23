@@ -40,11 +40,15 @@ public abstract class Player extends Unit implements HeroicUnit {
 
     public void visit(Enemy e){
         messageCallback.send(e.name+" have engaged in battle with "+this.name+"\n");
-        int damage =this.resource.getCurrentHealth()-attack()+defend();
-        this.resource.setCurrentHealth(damage);
-        messageCallback.send(this.name+" have recieved "+damage+" damage "+"\n");
-        if(e.getResource().getCurrentHealth()<=0){
-
+        int damage =this.defend()-e.attack();
+        if(damage>0) {
+            this.resource.setCurrentHealth(resource.getCurrentHealth()-damage);
+            messageCallback.send(this.name + " have recieved " + damage + " damage " + "\n");
+        }
+        else
+            messageCallback.send(e.name+" have missed the attack against "+this.name+"\n");
+        if(!alive()){
+            onDeath();
         }
     }
     public void visit(Player p){
@@ -74,8 +78,13 @@ public abstract class Player extends Unit implements HeroicUnit {
     }
 
     // Backend.Tiles.Units.Player level up
-    protected void levelUp(){
-//------------------------------------------------------------------------------------------
+    protected void levelUp( int defAdd, int attackAdd, int hpAdd){
+        resource.setHealthCapacity(resource.getHealthCapacity()+gainHealth()+hpAdd);
+        resource.setCurrentHealth(resource.getHealthCapacity());
+        attack = attack+ gainAttack()+attackAdd;
+        defense = defense +gainDefense()+defAdd;
+        experience = experience-(levelUpRequirement());
+        level = level+1;
     }
 
     @Override
@@ -109,6 +118,13 @@ public abstract class Player extends Unit implements HeroicUnit {
     public int getExperience() {
         return experience;
     }
+    public void gaindExperience (int exp) {
+        experience = experience+exp;
+        if(experience>levelUpRequirement())
+            this.levelUp();
+    }
+    public void levelUp()
+    {}
 
 
 

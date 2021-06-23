@@ -31,6 +31,8 @@ public class Enemy extends Unit {
         if(damage>0) {
             resource.setCurrentHealth(resource.getCurrentHealth() - damage);
             messageCallback.send(this.name + " have recieved " + damage + " damage " + "\n");
+            if(resource.getCurrentHealth()<=0)
+                onDeath();
         }
         else
             messageCallback.send(p.name + " missed the attack against " +this.name+ "\n");
@@ -52,6 +54,8 @@ public class Enemy extends Unit {
         if(damage>0) {
             resource.setCurrentHealth(resource.getCurrentHealth() - damage);
             messageCallback.send(this.name + " has recieved " + damage + " damage " + "\n");
+            if(resource.getCurrentHealth()<=0)
+                onDeath();
         }
     }
 
