@@ -14,7 +14,7 @@ public class Rogue extends Player {
 
     public Rogue(String name, int healthCapacity, int attack, int defense, int energy, int cost) {
         super(name, healthCapacity, attack, defense);
-        rougeResource = new RougeResource(healthCapacity,healthCapacity,energy, cost);
+        rougeResource = new RougeResource(healthCapacity,healthCapacity, cost);
     }
 
     @Override
