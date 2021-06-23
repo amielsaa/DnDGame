@@ -11,19 +11,18 @@ import java.io.File;
 import java.nio.file.Files;
 import java.util.List;
 
-class FileParser {
+public class FileParser {
     List<String> arr;
     TileFactory tileFactory = new TileFactory();
     public Player player;
-    public GameBoard parseLevel(File levelFile) {
+    public GameBoard parseLevel(File levelFile, Player player) { // aadd player argument
         try {
             arr = Files.readAllLines(levelFile.toPath());
         } catch (Exception e) {
             throw new IllegalArgumentException("could not load level");
         }
         GameBoard board = new GameBoard();
-        GameLevel m = new GameLevel();
-        Player player;
+        GameLevel m = GameLevel.getInstance();
         for (int i = 0; i < arr.size(); i++) {
             for (int j = 0; j < arr.get(i).length(); j++) {
                 Position p = new Position(i, j);
@@ -35,7 +34,7 @@ class FileParser {
                         board.add(new Empty(p));
                         break;
                     case '@':
-                        this.player = new Warrior("ariya", 500, 500, 500);
+                        this.player = player;
                         this.player.initialize(p);
                         this.player.setPosition(p);
                         board.add(this.player);
@@ -45,6 +44,7 @@ class FileParser {
                         e.setDeathCallback(() -> m.onEnemyDeath(e));
                         e.setMessageCallback((msg) -> System.out.println(msg));
                         board.add(e);
+                        GameLevel.getInstance().enemies.add(e);
                         e.initialize(p);
                         break;
                 }

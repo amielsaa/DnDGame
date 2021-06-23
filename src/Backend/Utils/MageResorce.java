@@ -1,12 +1,19 @@
 package Backend.Utils;
 
 public class MageResorce extends Resource {
-    private int mana;
+    private int manaPool;
+    private int currentMana;
+    private int cost;
     public MageResorce(int currentHealth, int healthCapacity, int mana , int cost) {
         super(currentHealth, healthCapacity);
-        this.mana = mana;
+        currentMana = mana;
+        this.cost = cost;
+        manaPool = mana;
     }
-    public int getMana() { return mana; }
-    public void setMana(int value){ mana = mana+value;}
+    public int getMana() { return currentMana; }
+    public int getCost(){return cost;}
+    public void setMana(){ currentMana = currentMana-cost;}
+
+
 
 }
