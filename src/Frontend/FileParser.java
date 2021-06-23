@@ -35,7 +35,7 @@ class FileParser {
                         board.add(new Empty(p));
                         break;
                     case '@':
-                        this.player = new Warrior("ariya", 500, 500, 500);
+                        this.player = new Warrior("ariya", 500, 500, 500,3);
                         this.player.initialize(p);
                         this.player.setPosition(p);
                         board.add(this.player);

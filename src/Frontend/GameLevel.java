@@ -77,11 +77,11 @@ public class GameLevel {
         }
         p.setMessageCallback((s)->{System.out.print(s);});
 
-        Player x = new Warrior("ariya", 500, 500, 500);
+        Player x = new Warrior("ariya", 500, 500, 500,3);
         x.setMessageCallback((s)->{System.out.print(s);});
         Enemy e=new Monster('k',"fuck",500,500,500,3,3);
         e.setMessageCallback((s)->{System.out.print(s);});
         e.visit(x);
-        x.CastAbility();
+        x.CastAbility(e);
     }
 }
