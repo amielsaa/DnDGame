@@ -6,6 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface InputProvider{
-	Action getAction();
+	char getAction();
 
 }

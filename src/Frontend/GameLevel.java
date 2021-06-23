@@ -1,6 +1,7 @@
 package Frontend;
 
 import Backend.Tile;
+import Backend.Tiles.Empty;
 import Backend.Tiles.Units.Enemies.Monster;
 import Backend.Tiles.Units.Enemy;
 import Backend.Tiles.Units.Player;
@@ -42,20 +43,35 @@ public class GameLevel {
     public FileParser getFileParser(){
         return fileParser;
     }
+
     public void tick(String action){
-        Action act = convertToAction(action);
-        if(action.length()>1 && act!=null){
-            player.setInputProvider(()->{return act;});
+        Position nextPosition = getInteractPosition(action);
+        if(action.length()==1 && nextPosition!=null){
+            //player.setInputProvider(()-> action.charAt(0));
+
+            Tile tileToInteract = gameBoard.findTile( new Position(player.getPosition().getRow()+nextPosition.getRow(),player.getPosition().getCol()+nextPosition.getCol()) );
+            player.interact(tileToInteract);
+            if(tileToInteract.getTile() == '.'){
+                gameBoard.SwitchPositions(tileToInteract,player);
+            }
+
+            gameBoard.Printall();
         }
 
-
     }
+
+
+
     public void onPlayerDeath(){
 
     }
 
     public void onEnemyDeath(Enemy e){
-
+        gameBoard.SwitchPositions(player,e);
+        Tile toRemove = gameBoard.findTile(e.getPosition());
+        Tile dot = new Empty(toRemove.getPosition());
+        gameBoard.remove(toRemove);
+        gameBoard.add(dot);
     }
 
     public Player getPlayer(){
@@ -68,18 +84,18 @@ public class GameLevel {
         this.player = player;
     }
 
-    public Action convertToAction(String action) {
+    public Position getInteractPosition(String action) {
         switch (action.toLowerCase().charAt(0)) {
             case 'a':
-                return Action.Left;
+                return new Position(0,-1);
             case 'd':
-                return Action.Right;
+                return new Position(0,1);
             case 's':
-                return Action.Down;
+                return new Position(1,0);
             case 'w':
-                return Action.Up;
+                return new Position(-1,0);
             case 'e':
-                return Action.CastAbility;
+                //return player.;
             default:
                 return null;
         }
@@ -97,7 +113,6 @@ public class GameLevel {
 //        String c ="";
 //        Scanner scanner= new Scanner(System.in);
 //
-//        Player p=fileParser.player;
 //        while(!c.equals("q")) {
 //            c=scanner.next();
 //            if(c.equals("d")) {

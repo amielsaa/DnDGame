@@ -56,7 +56,7 @@ public class PlayerSelectionMenu {
         }
         catch (Exception e){
 
-            System.out.println("you should choose a number between 1-6");
+           System.out.println("you should choose a number between 1-6");
             printMenu();
 
         }
