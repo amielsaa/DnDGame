@@ -55,7 +55,7 @@ public abstract class Player extends Unit implements HeroicUnit {
 
     }
 
-    public Action getAction(){
+    public char getAction(){
         return inputProvider.getAction();
     }
 

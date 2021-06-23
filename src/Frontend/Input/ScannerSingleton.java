@@ -17,6 +17,7 @@ public class ScannerSingleton {
     }
 
     public int nextInput() {
+        scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
 }

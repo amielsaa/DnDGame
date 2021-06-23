@@ -39,7 +39,7 @@ class GameBoard {
         tiles.set(index2,tile1);
     }
 
-
+    public void remove(Tile t) { tiles.remove(t);}
 
     public void add(Tile t){
         tiles.add(t);
