@@ -57,7 +57,7 @@ public abstract class Unit extends Tile {
     }
 
     // Should be automatically called once the unit finishes its turn
-    public abstract void processStep();
+    public abstract void processStep(Player p );
 
 
     // What happens when the unit dies
