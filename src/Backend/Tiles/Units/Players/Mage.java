@@ -1,5 +1,6 @@
 package Backend.Tiles.Units.Players;
 
+import Backend.Tiles.Units.Enemy;
 import Backend.Tiles.Units.Player;
 
 public class Mage extends Player {
@@ -9,7 +10,7 @@ public class Mage extends Player {
     }
 
     @Override
-    public void CastAbility() {
+    public void CastAbility(Enemy e) {
     messageCallback.send(this.name+"have used Blizzard");
     }
     @Override

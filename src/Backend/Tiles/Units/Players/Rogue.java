@@ -1,5 +1,6 @@
 package Backend.Tiles.Units.Players;
 
+import Backend.Tiles.Units.Enemy;
 import Backend.Tiles.Units.Player;
 
 public class Rogue extends Player {
@@ -8,7 +9,7 @@ public class Rogue extends Player {
     }
 
     @Override
-    public void CastAbility() {
+    public void CastAbility(Enemy e) {
         messageCallback.send(this.name+"have used Fan of Knifes");
     }
 
