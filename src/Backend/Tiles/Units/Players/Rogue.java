@@ -10,6 +10,8 @@ import java.util.List;
 public class Rogue extends Player {
 
     public RougeResource rougeResource;
+    protected static final int ATTACK_BONUS = 3;
+
     public Rogue(String name, int healthCapacity, int attack, int defense, int energy, int cost) {
         super(name, healthCapacity, attack, defense);
         rougeResource = new RougeResource(healthCapacity,healthCapacity,energy, cost);
@@ -37,6 +39,12 @@ public class Rogue extends Player {
     @Override
     public void processStep() {
 
+    }
+    public void levelUp()
+    {
+        int attackAdd = ATTACK_BONUS*(level+1);
+        super.levelUp(0,attackAdd,0);
+        rougeResource.resetEnergy();
     }
 
 }

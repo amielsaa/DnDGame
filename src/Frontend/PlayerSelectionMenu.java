@@ -55,9 +55,9 @@ public class PlayerSelectionMenu {
             GameLevel.getInstance().setPlayer(playerList.get(input-1));
         }
         catch (Exception e){
-            throw new IllegalArgumentException(e.getMessage());
-           // System.out.println("you should choose a number between 1-6");
-            //printMenu();
+
+            System.out.println("you should choose a number between 1-6");
+            printMenu();
 
         }
 

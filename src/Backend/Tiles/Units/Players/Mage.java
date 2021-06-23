@@ -46,7 +46,7 @@ public class Mage extends Player {
                 if(hits<hitsCount) {
                     double coinflip = NumericGenerator.getInstance().nextDouble();
                     if (coinflip > 0.5) {
-                        enemy.acceptAbility(spellPower);
+                        enemy.acceptAbility(this,spellPower);
                         hits = hits + 1;
                     }
                 }

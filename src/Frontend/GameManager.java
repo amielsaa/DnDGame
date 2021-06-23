@@ -110,10 +110,11 @@ public class GameManager {
         enemies.add(d);
         enemies.add(f);
         x.CastAbility(enemies);
-        x.CastAbility(enemies);
-        x.CastAbility(enemies);
-        x.CastAbility(enemies);
-        x.CastAbility(enemies);
+//        x.CastAbility(enemies);
+//        x.CastAbility(enemies);
+//        x.CastAbility(enemies);
+//        x.CastAbility(enemies);
+        x.gaindExperience(100);
 
     }
 }
