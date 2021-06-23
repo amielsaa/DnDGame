@@ -61,7 +61,7 @@ public abstract class Player extends Unit implements HeroicUnit {
 
     // Deals damage to the enemy with ability
     protected void abilityDamage(Enemy e, int abilityDamage) {
-		e.acceptAbility(abilityDamage);
+		e.acceptAbility(this,abilityDamage);
     }
 
     // When the player kills an enemy
@@ -124,7 +124,9 @@ public abstract class Player extends Unit implements HeroicUnit {
             this.levelUp();
     }
     public void levelUp()
-    {}
+    {
+        System.out.println("not the right one");
+    }
 
 
 

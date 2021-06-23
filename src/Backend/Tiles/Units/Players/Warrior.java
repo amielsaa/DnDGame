@@ -11,6 +11,9 @@ import java.util.List;
 public class Warrior extends Player {
 
     public WarriorResource warriorResource;
+    protected static final int ATTACK_BONUS = 2;
+    protected static final int DEFENSE_BONUS = 1;
+    protected static final int HEALTH_BONUS = 5;
     public Warrior(String name, int healthCapacity, int attack, int defense, int cooldown) {
         super(name, healthCapacity, attack, defense);
         warriorResource = new WarriorResource(healthCapacity,healthCapacity,cooldown,defense);
@@ -28,7 +31,7 @@ public class Warrior extends Player {
             }
             messageCallback.send(this.name+" have have used Avengers Shield"+"\n");
             int index = (int)Math.round(NumericGenerator.getInstance().nextDouble()*(closeEnemies.size()-1));
-            closeEnemies.get(index).acceptAbility((int)(Math.round(0.1*warriorResource.getHealthCapacity())));
+            closeEnemies.get(index).acceptAbility(this,(int)(Math.round(0.1*warriorResource.getHealthCapacity())));
             warriorResource.castedAbility();
 
         }
@@ -42,7 +45,15 @@ public class Warrior extends Player {
 
     @Override
     public void processStep() {
-
+    }
+    public void levelUp()
+    {
+        int attackAdd = ATTACK_BONUS*(level+1);
+        int defAdd = DEFENSE_BONUS*(level+1);
+        int hpAdd = HEALTH_BONUS*(level+1);
+        super.levelUp(defAdd,attackAdd,hpAdd);
+        warriorResource.resetCooldown();
 
     }
+
 }

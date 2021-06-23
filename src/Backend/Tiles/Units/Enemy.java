@@ -31,8 +31,10 @@ public class Enemy extends Unit {
         if(damage>0) {
             resource.setCurrentHealth(resource.getCurrentHealth() - damage);
             messageCallback.send(this.name + " have recieved " + damage + " damage " + "\n");
-            if(resource.getCurrentHealth()<=0)
+            if(resource.getCurrentHealth()<=0) {
                 onDeath();
+                p.gaindExperience(exp);
+            }
         }
         else
             messageCallback.send(p.name + " missed the attack against " +this.name+ "\n");
@@ -49,13 +51,15 @@ public class Enemy extends Unit {
         unit.visit(this);
     }
 
-    public void acceptAbility(int abilityDamage){
+    public void acceptAbility(Player p, int abilityDamage){
         int damage = abilityDamage- defend();
         if(damage>0) {
             resource.setCurrentHealth(resource.getCurrentHealth() - damage);
-            messageCallback.send(this.name + " has recieved " + damage + " damage " + "\n");
-            if(resource.getCurrentHealth()<=0)
+            messageCallback.send(this.name + " has receive " + damage + " damage " + "\n");
+            if(resource.getCurrentHealth()<=0) {
                 onDeath();
+                p.gaindExperience(exp);
+            }
         }
     }
 

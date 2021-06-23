@@ -19,8 +19,10 @@ public class WarriorResource extends Resource {
         else
             setCurrentHealth(getCurrentHealth()+10*defense);
     }
-    public  void cooldownOnTick(){
+    public void cooldownOnTick(){
         if(remainingCooldown>0)
             remainingCooldown=remainingCooldown-1;
     }
+    public void resetCooldown()
+    {remainingCooldown=0;}
 }
