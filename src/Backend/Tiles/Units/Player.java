@@ -46,8 +46,6 @@ public abstract class Player extends Unit implements HeroicUnit {
         if(e.getResource().getCurrentHealth()<=0){
 
         }
-
-
     }
     public void visit(Player p){
 

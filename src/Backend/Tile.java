@@ -45,6 +45,10 @@ public abstract class Tile implements Comparable<Tile> {
         return String.valueOf(tile);
     }
 
+    public int CheckDistance(Tile tile){
+        return tile.position.checkDistance(this.position);
+    }
+
    public  void SwitchPosition(Tile tile){
         Position p=tile.position;
         tile.setPosition(this.position);
