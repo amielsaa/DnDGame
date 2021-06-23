@@ -1,9 +1,10 @@
 package Frontend;
 
 import Backend.Tiles.Units.Player;
+import Frontend.Input.ScannerSingleton;
 
 import java.util.List;
-import java.util.Scanner;
+
 
 public class PlayerSelectionMenu {
 
@@ -29,7 +30,7 @@ public class PlayerSelectionMenu {
                 System.out.println("|----------------------------------------- ------Rouges------------------------------------------------------|");
 
             Player p = playerList.get(i);
-            String toprint = "| " + i + ". " + p.describe();
+            String toprint = "| " + (i+1) + ". " + p.describe();
             System.out.print(toprint);
             if (toprint.length() < s.length()) {
                 while (toprint.length()<86) {
@@ -47,10 +48,20 @@ public class PlayerSelectionMenu {
             }
         }
         System.out.println("|------------------------------------------------------------------------------------------------------------|");
-        String input;
-        Scanner sc = new Scanner(System.in);
-        input = sc.nextLine();
-        GameLevel.getInstance().setPlayer(playerList.get(Integer.parseInt(input)));
+        Integer input;
+        try {
+
+             input =  ScannerSingleton.getInstance().nextInput();
+            GameLevel.getInstance().setPlayer(playerList.get(input-1));
+        }
+        catch (Exception e){
+            throw new IllegalArgumentException(e.getMessage());
+           // System.out.println("you should choose a number between 1-6");
+            //printMenu();
+
+        }
+
+
 
     }
 
