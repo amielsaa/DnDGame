@@ -37,16 +37,20 @@ public class Mage extends Player {
                 if (distance <= abilityRange)
                     closeEnemies.add(enemy);
             }
+            if(closeEnemies.size()!=0)
+                messageCallback.send(this.name+" have used Blizzard, "+"\n");
             for (Enemy enemy : closeEnemies)
             {
-                double coinflip = NumericGenerator.getInstance().nextDouble();
-                if (coinflip > 0.5) {
-                    enemy.acceptAbility(spellPower);
-                    hits = hits + 1;
+                if(hits<hitsCount) {
+                    double coinflip = NumericGenerator.getInstance().nextDouble();
+                    if (coinflip > 0.5) {
+                        enemy.acceptAbility(spellPower);
+                        hits = hits + 1;
+                    }
                 }
             }
             mageResorce.setMana();
-            messageCallback.send(this.name+"have used Blizzard, "+hits+" enemies were hit for "+spellPower+" damage."+"\n");
+            messageCallback.send(hits+" enemies were hit."+"\n");;
         }
         else{ messageCallback.send(this.name+" doesn't have enough mana"+"\n");}
     }

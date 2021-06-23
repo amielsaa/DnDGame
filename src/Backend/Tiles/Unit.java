@@ -48,7 +48,7 @@ public abstract class Unit extends Tile {
         this.messageCallback = messageCallback;
     }
 
-    protected int attack(){
+    public int attack(){
        return  (int)Math.round(attack*r.nextDouble());
     }
 

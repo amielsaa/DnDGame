@@ -29,7 +29,7 @@ public class Rogue extends Player {
                 }
             }
             rougeResource.setEnergy();
-            messageCallback.send(this.name + "have used Fan of Knifes, "+hits+" enemies were hit for "+attack+" damage."+"\n");
+            messageCallback.send(this.name + "have used Fan of Knifes, "+hits+" enemies were hit."+"\n");
         }
         else{ messageCallback.send(this.name+" doesn't have enough energy"+"\n");}
     }

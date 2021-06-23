@@ -26,10 +26,11 @@ public class Warrior extends Player {
                 if (distance < 3)
                     closeEnemies.add(enemy);
             }
+            messageCallback.send(this.name+" have have used Avengers Shield"+"\n");
             int index = (int)Math.round(NumericGenerator.getInstance().nextDouble()*(closeEnemies.size()-1));
             closeEnemies.get(index).acceptAbility((int)(Math.round(0.1*warriorResource.getHealthCapacity())));
             warriorResource.castedAbility();
-            messageCallback.send(this.name+" have have used Avengers Shield"+"\n");
+
         }
         else
             messageCallback.send("ability cool down hasn't reset yet"+"\n");

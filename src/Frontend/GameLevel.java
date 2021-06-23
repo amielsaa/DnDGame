@@ -23,6 +23,7 @@ public class GameLevel {
     private Player player;
     public List<Enemy> enemies;
     public static FileParser fileParser;
+
     private static GameLevel instance;
     //TODO
     //המשחק בנוי על לעשות לולאת while אחת גדולה שכל עוד השחקן לא מת אני מקבל קלט  תנועה או קאסט אביליטי וכל השאר בהתאם.
