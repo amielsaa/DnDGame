@@ -28,24 +28,27 @@ public class Mage extends Player {
     @Override
     public void CastAbility(List<Enemy> e)
     {
-        messageCallback.send(this.name+"have used Blizzard");
-        List<Enemy> closeEnemys = new LinkedList<Enemy>();
+        int hits=0;
         if(mageResorce.getMana()>mageResorce.getCost()) {
+            List<Enemy> closeEnemies = new LinkedList<Enemy>();
             for (Enemy enemy : e)
             {
                 int distance = this.CheckDistance(enemy);
                 if (distance <= abilityRange)
-                    closeEnemys.add(enemy);
+                    closeEnemies.add(enemy);
             }
-            for (Enemy enemy : closeEnemys)
+            for (Enemy enemy : closeEnemies)
             {
                 double coinflip = NumericGenerator.getInstance().nextDouble();
                 if (coinflip > 0.5) {
                     enemy.acceptAbility(spellPower);
+                    hits = hits + 1;
                 }
-                mageResorce.setMana();
             }
+            mageResorce.setMana();
+            messageCallback.send(this.name+"have used Blizzard, "+hits+" enemies were hit for "+spellPower+" damage."+"\n");
         }
+        else{ messageCallback.send(this.name+" doesn't have enough mana"+"\n");}
     }
     @Override
     public void processStep() {

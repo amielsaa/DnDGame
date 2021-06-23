@@ -4,6 +4,7 @@ import Backend.Tiles.Units.Enemy;
 import Backend.Tiles.Units.Player;
 import Backend.Utils.RougeResource;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Rogue extends Player {
@@ -16,8 +17,22 @@ public class Rogue extends Player {
 
     @Override
     public void CastAbility(List<Enemy> e) {
+        if(rougeResource.getEnergy()>rougeResource.getCost()) {
+            int hits=0;
+            for (Enemy enemy : e)
+            {
+                int distance = this.CheckDistance(enemy);
+                if (distance <2)
+                {
+                    enemy.acceptAbility(attack);
+                    hits = hits+1;
+                }
+            }
+            rougeResource.setEnergy();
+            messageCallback.send(this.name + "have used Fan of Knifes, "+hits+" enemies were hit for "+attack+" damage."+"\n");
+        }
+        else{ messageCallback.send(this.name+" doesn't have enough energy"+"\n");}
 
-        messageCallback.send(this.name+"have used Fan of Knifes");
     }
 
     @Override
