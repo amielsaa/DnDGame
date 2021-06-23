@@ -24,15 +24,15 @@ public class Monster extends Enemy {
             GameBoard gameBoard = GameLevel.getInstance().getBoard();
             switch ((int)(NumericGenerator.getInstance().nextDouble()*5)){
                 case 1:
-                    interact(this.position.getCol()-1,this.position.getRow(),gameBoard);
+                    interact(this.position.getCol()-1,this.position.getRow(),gameBoard);//Left
                 case 2:
-                    interact(this.position.getCol()+1,this.position.getRow(),gameBoard);
+                    interact(this.position.getCol()+1,this.position.getRow(),gameBoard);//right
                 case 3:
-                    interact(this.position.getCol(),this.position.getRow()-1,gameBoard);
+                    interact(this.position.getCol(),this.position.getRow()-1,gameBoard);//Up
                 case 4:
-                    interact(this.position.getCol(),this.position.getRow()+1,gameBoard);
+                    interact(this.position.getCol(),this.position.getRow()+1,gameBoard);//Down
                 default:
-                    doNothing();
+                    //stay in place
             }
         }
 
@@ -60,5 +60,4 @@ public class Monster extends Enemy {
         Tile tile = gameBoard.findTile(new Position(rowIndex,colIndex));
         tile.accept(this);
     }
-    public void doNothing (){}
 }
