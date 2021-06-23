@@ -15,6 +15,8 @@ public class Mage extends Player {
     private int spellPower;
     private int hitsCount;
     private int abilityRange;
+    protected static final int MANA_BONUS = 25;
+    protected static final int SPELL_POWER_BONUS = 10;
 
     public Mage(String name, int healthCapacity, int attack, int defense, int mana, int cost, int spellPower, int hitsCount, int abilityRange)
     {
@@ -58,6 +60,15 @@ public class Mage extends Player {
     public void processStep() {
 
     }
+    public void levelUp()
+    {
+        super.levelUp(0,0,0);
+        int mana = MANA_BONUS*level;
+        spellPower =spellPower+SPELL_POWER_BONUS*level;
+        mageResorce.setUponLevelUp(mana);
+
+    }
+
 
 
 }
