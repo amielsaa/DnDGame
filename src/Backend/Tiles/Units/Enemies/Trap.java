@@ -1,6 +1,7 @@
 package Backend.Tiles.Units.Enemies;
 
 import Backend.Tiles.Units.Enemy;
+import Backend.Tiles.Units.Player;
 
 public class Trap extends Enemy {
     int visibleTime;
@@ -10,6 +11,10 @@ public class Trap extends Enemy {
         super(tile, name, healthCapacity, attack, defense,exp);
         this.visibleTime=visableTime;
         this.invisbleTime=invisbleTime;
+
+    }
+    @Override
+    public void processStep(Player p) {
 
     }
 }

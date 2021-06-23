@@ -37,9 +37,6 @@ public class Rogue extends Player {
     }
 
     @Override
-    public void processStep() {
-
-    }
     public void levelUp()
     {
         int attackAdd = ATTACK_BONUS*(level+1);

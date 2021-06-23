@@ -44,8 +44,6 @@ public class Warrior extends Player {
     }
 
     @Override
-    public void processStep() {
-    }
     public void levelUp()
     {
         int attackAdd = ATTACK_BONUS*(level+1);
@@ -53,6 +51,7 @@ public class Warrior extends Player {
         int hpAdd = HEALTH_BONUS*(level+1);
         super.levelUp(defAdd,attackAdd,hpAdd);
         warriorResource.resetCooldown();
+
 
     }
 
