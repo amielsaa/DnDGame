@@ -82,6 +82,6 @@ public class GameLevel {
         Enemy e=new Monster('k',"fuck",500,500,500,3,3);
         e.setMessageCallback((s)->{System.out.print(s);});
         e.visit(x);
-        x.CastAbility();
+        //x.CastAbility();
     }
 }
