@@ -16,6 +16,7 @@ public class Monster extends Enemy {
 
         this.vision=vision;
     }
+    @Override
     public void processStep(Player p) {
         if(p.position.checkDistance(this.position)<vision) {
             inRange(p);
