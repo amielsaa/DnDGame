@@ -45,7 +45,7 @@ public class FileParser {
                         Enemy e = tileFactory.enemiesMap.get(arr.get(i).charAt(j)).get();
                         e.setDeathCallback(() -> m.onEnemyDeath(e));
                         e.setMessageCallback((msg) -> System.out.println(msg));
-                        e.setMovementCallback((positionA,positionB)->System.out.println(""));//AMIEEEEEEEELLLLLLLLLLLL
+                        e.setMovementCallback((positionA,positionB)->m.onMovementCall(positionA,positionB));//AMIEEEEEEEELLLLLLLLLLLL
                         board.add(e);
                         GameLevel.getInstance().enemies.add(e);
                         e.initialize(p);

@@ -44,7 +44,7 @@ public class GameManager {
 
 
 
-        for(int i = 2;i<levelFiles.size() & !won;i++) {
+        for(int i = 0;i<levelFiles.size() & !won;i++) {
             //levels loop
 
             gameLevel.loadLevel(levelFiles.get(i));

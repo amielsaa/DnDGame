@@ -79,7 +79,6 @@ public class GameLevel {
     }
 
     public void onEnemyDeath(Enemy e){
-        gameBoard.SwitchPositions(player,e);
         Tile toRemove = gameBoard.findTile(e.getPosition());
         Tile dot = new Empty(toRemove.getPosition());
         gameBoard.remove(toRemove);
