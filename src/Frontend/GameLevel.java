@@ -62,6 +62,10 @@ public class GameLevel {
 
     }
 
+    public void onMovementCall(Position pos1,Position pos2) {
+        gameBoard.SwitchPositions(gameBoard.findTile(pos1),gameBoard.findTile(pos2));
+    }
+
     private void enemyProcessStep() {
         for(Enemy e : enemies) {
             e.processStep(player);
@@ -111,11 +115,8 @@ public class GameLevel {
     public void loadLevel(File level) {
 
 
-
-
         gameBoard = fileParser.parseLevel(level, player);
         gameBoard.Printall();
-
 
 
 //        String c ="";
