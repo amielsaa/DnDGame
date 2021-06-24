@@ -25,13 +25,13 @@ public class Monster extends Enemy {
             GameBoard gameBoard = GameLevel.getInstance().getBoard();
             switch ((int)(NumericGenerator.getInstance().nextDouble()*5)){
                 case 1:
-                    interact(this.position.getCol()-1,this.position.getRow(),gameBoard);//Left
+                    interact(this.position.getCol()+1,this.position.getRow(),gameBoard);//Left
                 case 2:
-                    interact(this.position.getCol()+1,this.position.getRow(),gameBoard);//right
+                    interact(this.position.getCol()-1,this.position.getRow(),gameBoard);//right
                 case 3:
-                    interact(this.position.getCol(),this.position.getRow()-1,gameBoard);//Up
+                    interact(this.position.getCol(),this.position.getRow()+1,gameBoard);//Up
                 case 4:
-                    interact(this.position.getCol(),this.position.getRow()+1,gameBoard);//Down
+                    interact(this.position.getCol(),this.position.getRow()-1,gameBoard);//Down
                 default:
                     //stay in place
             }
@@ -45,16 +45,16 @@ public class Monster extends Enemy {
         if(Math.abs(xDistance)>Math.abs(yDistance))
         {
             if(xDistance>0)
-            { interact(this.position.getCol()-1,this.position.getRow(),gameBoard); }
+            { interact(this.position.getCol()+1,this.position.getRow(),gameBoard); }
             else
-            { interact(this.position.getCol()+1,this.position.getRow(),gameBoard);}
+            { interact(this.position.getCol()-1,this.position.getRow(),gameBoard);}
         }
         else
         {
             if(yDistance>0)
-            { interact(this.position.getCol(),this.position.getRow()+1,gameBoard); }
+            { interact(this.position.getCol(),this.position.getRow()-1,gameBoard); }
             else
-            { interact(this.position.getCol(),this.position.getRow()-1,gameBoard);}
+            { interact(this.position.getCol(),this.position.getRow()+1,gameBoard);}
         }
     }
     private void interact(int colIndex, int rowIndex, GameBoard gameBoard){
