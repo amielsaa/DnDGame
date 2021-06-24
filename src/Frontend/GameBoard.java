@@ -41,7 +41,10 @@ public class GameBoard {
 
     public void remove(Tile t) { tiles.remove(t);}
 
-    public void add(Tile t){
+    public void add(Tile t ,int index){
+        tiles.add(index,t);
+    }
+    public void add(Tile t ){
         tiles.add(t);
     }
 

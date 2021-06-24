@@ -1,6 +1,9 @@
 package Backend;
 
 import Backend.Tiles.Unit;
+import Backend.Tiles.Units.Enemies.Monster;
+import Backend.Tiles.Units.Enemy;
+import Backend.Tiles.Units.Player;
 import Backend.Utils.Position;
 
 public abstract class Tile implements Comparable<Tile> {
@@ -34,6 +37,7 @@ public abstract class Tile implements Comparable<Tile> {
 
     public abstract void accept(Unit unit);
 
+
     @Override
     public int compareTo(Tile tile) {
         return getPosition().compareTo(tile.getPosition());
@@ -54,4 +58,8 @@ public abstract class Tile implements Comparable<Tile> {
         tile.setPosition(this.position);
         this.setPosition(p);
     }
+
+
+    public abstract void visit(Player p );
+    public abstract void visit(Enemy e);
 }

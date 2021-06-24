@@ -1,5 +1,6 @@
 package Backend.Tiles.Units.Players;
 
+import Backend.Tiles.Unit;
 import Backend.Tiles.Units.Enemy;
 import Backend.Tiles.Units.Player;
 import Backend.Utils.MageResorce;
@@ -57,7 +58,9 @@ public class Mage extends Player {
         else{ messageCallback.send(this.name+" doesn't have enough mana"+"\n");}
     }
 
-   @Override
+
+
+    @Override
     public void levelUp()
     {
         super.levelUp(0,0,0);

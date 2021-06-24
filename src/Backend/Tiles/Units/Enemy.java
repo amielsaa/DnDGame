@@ -15,14 +15,26 @@ public class Enemy extends Unit {
 
     }
 
-    @Override
-    public void onDeath(Position position) {
+
+    public void onDeath(Position position, Player p) {
+
         messageCallback.send("enemy"+this.name+"has been defeated");
         movementCallback.call(position, this.position);
+        p.position =  new Position(this.position.getRow(),this.position.getCol());
         this.position = new Position(position.getRow(),position.getCol());
         deathCallback.call();
 
     }
+    @Override
+    public void onDeath(Position p) {
+        messageCallback.send("enemy"+this.name+"has been defeated");
+        deathCallback.call();
+    }
+
+    @Override
+    public void visit(Enemy e) { }
+
+
 
     @Override
     public void visit(Player p) {
@@ -33,9 +45,9 @@ public class Enemy extends Unit {
             resource.setCurrentHealth(resource.getCurrentHealth() - damage);
             messageCallback.send(this.name + " have recieved " + damage + " damage " + "\n");
             if(resource.getCurrentHealth()<=0) {
-                Position playerNewPosition =  new Position(this.position.getRow(),this.position.getCol());
-                onDeath(p.position);
-                p.position =playerNewPosition;
+
+                onDeath(p.position,p);
+
                 p.gaindExperience(exp);
             }
         }
@@ -44,14 +56,11 @@ public class Enemy extends Unit {
         messageCallback.send(this.describe());
     }
 
-    @Override
-    public void visit(Enemy e) {
 
-    }
 
     @Override
     public void accept(Unit unit) {
-        unit.visit(this);
+        unit.accept(this);
     }
 
     public void acceptAbility(Player p, int abilityDamage){

@@ -3,6 +3,8 @@ package Backend.Tiles;
 import Backend.Callbacks.MovementCallback;
 import Backend.Tile;
 import Backend.Tiles.Unit;
+import Backend.Tiles.Units.Enemy;
+import Backend.Tiles.Units.Player;
 import Backend.Utils.Position;
 
 public class Empty extends Tile {
@@ -17,5 +19,10 @@ public class Empty extends Tile {
         unit.setPosition(this.position);
         setPosition(t);
     }
+
+
+
+    public void visit(Player p){accept(p);}
+    public void visit(Enemy e){accept(e);}
 
 }

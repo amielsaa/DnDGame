@@ -67,11 +67,10 @@ public class GameLevel {
     }
 
     private void enemyProcessStep() {
-        for(Enemy e : enemies) {
-            e.processStep(player);
+        for(int i =0;i<enemies.size();i++) {
+            enemies.get(i).processStep(player);
         }
     }
-
 
 
     public void onPlayerDeath(){
@@ -80,9 +79,10 @@ public class GameLevel {
 
     public void onEnemyDeath(Enemy e){
         Tile toRemove = gameBoard.findTile(e.getPosition());
+        int index = gameBoard.getIndex(e);
         Tile dot = new Empty(toRemove.getPosition());
         gameBoard.remove(toRemove);
-        gameBoard.add(dot);
+        gameBoard.add(dot,index);
     }
 
     public Player getPlayer(){

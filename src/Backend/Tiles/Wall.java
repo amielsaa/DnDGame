@@ -2,6 +2,8 @@ package Backend.Tiles;
 
 import Backend.Tile;
 import Backend.Tiles.Unit;
+import Backend.Tiles.Units.Enemy;
+import Backend.Tiles.Units.Player;
 import Backend.Utils.Position;
 
 public class Wall extends Tile {
@@ -14,4 +16,6 @@ public class Wall extends Tile {
     public void accept(Unit unit) {
 
     }
+    public void visit(Enemy e){}
+    public void visit(Player p){}
 }
