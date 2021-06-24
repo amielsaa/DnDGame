@@ -134,8 +134,8 @@ public abstract class Player extends Unit implements HeroicUnit {
         return String.format("%s\t\tLevel: %d\t\tExperience: %d/%d", super.describe(), getLevel(), getExperience(), levelUpRequirement());
     }
 
-    public String unitDescribe() {
-        return super.describe();
+    public String tickDescribe() {
+        return String.format("%s\t\tHealth: %d/%d\t\tLevel: %d\t\tExperience: %d/%d",super.describe(),getResource().getCurrentHealth(),getResource().getHealthCapacity(),getLevel(),getExperience(),levelUpRequirement());
     }
 
     public void setInputProvider(InputProvider inputProvider) {

@@ -47,7 +47,7 @@ public class GameLevel {
     public void tick(String action){
         Position nextPosition = getInteractPosition(action);
         if(action.length()==1 && nextPosition!=null){
-            //player.setInputProvider(()-> action.charAt(0));
+            player.setInputProvider(()-> action.charAt(0));
 
             Tile tileToInteract = gameBoard.findTile( new Position(player.getPosition().getRow()+nextPosition.getRow(),player.getPosition().getCol()+nextPosition.getCol()) );
             player.interact(tileToInteract);
@@ -55,10 +55,21 @@ public class GameLevel {
                 gameBoard.SwitchPositions(tileToInteract,player);
             }
 
-
+            enemyProcessStep();
+            System.out.println(player.tickDescribe());
             gameBoard.Printall();
         }
 
+    }
+
+    public void onMovementCall(Position pos1,Position pos2) {
+        gameBoard.SwitchPositions(gameBoard.findTile(pos1),gameBoard.findTile(pos2));
+    }
+
+    private void enemyProcessStep() {
+        for(Enemy e : enemies) {
+            e.processStep(player);
+        }
     }
 
 
@@ -68,7 +79,6 @@ public class GameLevel {
     }
 
     public void onEnemyDeath(Enemy e){
-        gameBoard.SwitchPositions(player,e);
         Tile toRemove = gameBoard.findTile(e.getPosition());
         Tile dot = new Empty(toRemove.getPosition());
         gameBoard.remove(toRemove);
@@ -104,11 +114,8 @@ public class GameLevel {
     public void loadLevel(File level) {
 
 
-
-
         gameBoard = fileParser.parseLevel(level, player);
         gameBoard.Printall();
-
 
 
 //        String c ="";

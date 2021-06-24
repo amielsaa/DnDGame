@@ -40,12 +40,15 @@ public class GameManager {
                     .filter(s -> s.getName().matches("^level\\d+\\.txt$"))
                     .collect(Collectors.toList());
         boolean won = false;
+        //gameLevel.loadLevel(levelFiles.get(1));
+
+
 
         for(int i = 0;i<levelFiles.size() & !won;i++) {
             //levels loop
 
             gameLevel.loadLevel(levelFiles.get(i));
-            GameBoard gameBoard  = gameLevel.getBoard();
+           // GameBoard gameBoard  = gameLevel.getBoard();
             Player player = gameLevel.getPlayer();
 
             //game loop
