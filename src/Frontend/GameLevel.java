@@ -55,6 +55,7 @@ public class GameLevel {
                 gameBoard.SwitchPositions(tileToInteract,player);
             }
 
+
             gameBoard.Printall();
         }
 

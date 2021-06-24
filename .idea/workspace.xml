@@ -20,25 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27ae4c1a-a6d7-4df3-a0a5-5674e14fc9b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Backend/Callbacks/MovementCallback.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Monster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Empty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Empty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Utils/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,9 +37,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -204,24 +192,5 @@
     </state>
     <state x="440" y="94" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624396037687" />
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1624452858564" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java</url>
-          <line>36</line>
-          <properties class="Backend.Tiles.Units.Player" method="accept">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Frontend/GameManager.java</url>
-          <line>124</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

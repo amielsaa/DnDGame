@@ -19,7 +19,7 @@ public class Monster extends Enemy {
     @Override
     public void processStep(Player p) {
         if(p.position.checkDistance(this.position)<vision) {
-            inRange(p);
+            chase(p);
         }
         else{
             GameBoard gameBoard = GameLevel.getInstance().getBoard();
@@ -38,7 +38,7 @@ public class Monster extends Enemy {
         }
 
     }
-    public void inRange(Player p ){
+    public void chase(Player p ){
         int yDistance = this.position.getRow() - p.position.getRow();
         int xDistance = this.position.getCol() - p.position.getCol();
         GameBoard gameBoard = GameLevel.getInstance().getBoard();
@@ -58,7 +58,9 @@ public class Monster extends Enemy {
         }
     }
     private void interact(int colIndex, int rowIndex, GameBoard gameBoard){
+        Position oldPosition = this.position;
         Tile tile = gameBoard.findTile(new Position(rowIndex,colIndex));
         tile.accept(this);
+        movementCallback.call(oldPosition,this.position);
     }
 }
