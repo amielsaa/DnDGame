@@ -40,6 +40,7 @@ public class Enemy extends Unit {
         }
         else
             messageCallback.send(p.name + " missed the attack against " +this.name+ "\n");
+        this.describe();
 
     }
 
