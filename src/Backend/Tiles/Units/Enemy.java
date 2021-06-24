@@ -1,6 +1,7 @@
 package Backend.Tiles.Units;
 
 import Backend.Tiles.Unit;
+import Backend.Utils.Position;
 
 public class Enemy extends Unit {
     int exp;
@@ -15,8 +16,9 @@ public class Enemy extends Unit {
     }
 
     @Override
-    public void onDeath() {
+    public void onDeath(Position position) {
         messageCallback.send("enemy"+this.name+"has been defeated");
+        movementCallback.call(position, this.position);
         deathCallback.call();
 
     }
@@ -30,7 +32,9 @@ public class Enemy extends Unit {
             resource.setCurrentHealth(resource.getCurrentHealth() - damage);
             messageCallback.send(this.name + " have recieved " + damage + " damage " + "\n");
             if(resource.getCurrentHealth()<=0) {
-                onDeath();
+                Position playerNewPosition =  new Position(this.position.getRow(),this.position.getCol());
+                onDeath(p.position);
+                p.position =playerNewPosition;
                 p.gaindExperience(exp);
             }
         }
@@ -55,7 +59,7 @@ public class Enemy extends Unit {
             resource.setCurrentHealth(resource.getCurrentHealth() - damage);
             messageCallback.send(this.name + " has receive " + damage + " damage " + "\n");
             if(resource.getCurrentHealth()<=0) {
-                onDeath();
+                onDeath(this.position);
                 p.gaindExperience(exp);
             }
         }
