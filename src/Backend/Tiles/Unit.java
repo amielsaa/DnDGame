@@ -2,6 +2,7 @@ package Backend.Tiles;
 
 import Backend.Callbacks.DeathCallback;
 import Backend.Callbacks.MessageCallback;
+import Backend.Callbacks.MovementCallback;
 import Backend.Tiles.Units.Enemy;
 import Backend.Tiles.Units.Player;
 import Backend.Tile;
@@ -13,6 +14,8 @@ public abstract class Unit extends Tile {
     // A singleton object for generating numbers - NumericGenerator is an interface, implemented by a RandomGenerator and a DeterministicGenerator
     protected static final NumericGenerator r = NumericGenerator.getInstance();
     protected MessageCallback messageCallback;
+    protected MovementCallback movementCallback;
+
     public DeathCallback deathCallback;
     public String name;
     protected Resource resource;
@@ -92,4 +95,6 @@ public abstract class Unit extends Tile {
     public void setMessageCallback(MessageCallback m) {
         this.messageCallback =m;
     }
+
+    public void setMovementCallback(MovementCallback m) { this.movementCallback = m;}
 }

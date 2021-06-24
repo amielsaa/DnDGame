@@ -1,10 +1,12 @@
 package Backend.Tiles;
 
+import Backend.Callbacks.MovementCallback;
 import Backend.Tile;
 import Backend.Tiles.Unit;
 import Backend.Utils.Position;
 
 public class Empty extends Tile {
+
     public Empty(Position position) {
         super('.',position);
     }
@@ -15,4 +17,5 @@ public class Empty extends Tile {
         unit.setPosition(this.position);
         setPosition(t);
     }
+
 }

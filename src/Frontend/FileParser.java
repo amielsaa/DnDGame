@@ -31,8 +31,10 @@ public class FileParser {
                         board.add(new Wall(p));
                         break;
                     case '.':
+                      {
                         board.add(new Empty(p));
                         break;
+                      }
                     case '@':
                         this.player = player;
                         this.player.initialize(p,(msg) -> System.out.println(msg),()->m.onPlayerDeath() ,()->'s');
@@ -43,6 +45,7 @@ public class FileParser {
                         Enemy e = tileFactory.enemiesMap.get(arr.get(i).charAt(j)).get();
                         e.setDeathCallback(() -> m.onEnemyDeath(e));
                         e.setMessageCallback((msg) -> System.out.println(msg));
+                        e.setMovementCallback((positionA,positionB)->System.out.println(""));//AMIEEEEEEEELLLLLLLLLLLL
                         board.add(e);
                         GameLevel.getInstance().enemies.add(e);
                         e.initialize(p);
