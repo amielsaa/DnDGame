@@ -70,17 +70,23 @@ public class GameLevel {
         for(int i =0;i<enemies.size();i++) {
             enemies.get(i).processStep(player);
         }
+
     }
+
 
 
     public void onPlayerDeath(){
 
     }
 
+
+
     public void onEnemyDeath(Enemy e){
         Tile toRemove = gameBoard.findTile(e.getPosition());
         int index = gameBoard.getIndex(e);
-        Tile dot = new Empty(toRemove.getPosition());
+        Position dotPos = new Position(toRemove.getPosition().getRow(),toRemove.getPosition().getCol());
+        Tile dot = new Empty(dotPos);
+        enemies.remove(e);
         gameBoard.remove(toRemove);
         gameBoard.add(dot,index);
     }

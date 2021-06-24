@@ -38,22 +38,24 @@ public class Enemy extends Unit {
 
     @Override
     public void visit(Player p) {
-         messageCallback.send(p.name+" have engaged in battle with "+this.name+ "\n");
+        messageCallback.send("--------------------------------------------------------------------------------------------------------------------------");
+        messageCallback.send(p.name+" has engaged in battle with "+this.name+ "\n");
 
         int damage = p.attack()-this.defend();
         if(damage>0) {
             resource.setCurrentHealth(resource.getCurrentHealth() - damage);
-            messageCallback.send(this.name + " have recieved " + damage + " damage " + "\n");
-            if(resource.getCurrentHealth()<=0) {
+            messageCallback.send(this.name + " has received " + damage + " damage " );
 
-                onDeath(p.position,p);
-
-                p.gaindExperience(exp);
-            }
         }
         else
-            messageCallback.send(p.name + " missed the attack against " +this.name+ "\n");
-        messageCallback.send(this.describe());
+            messageCallback.send(p.name + " missed the attack against " +this.name);
+
+        if(resource.getCurrentHealth()<=0) {
+            onDeath(p.position,p);
+            p.gaindExperience(exp);
+        }
+        else
+            messageCallback.send(this.describe());
     }
 
 

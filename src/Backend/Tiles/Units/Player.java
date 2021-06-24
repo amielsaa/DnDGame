@@ -41,18 +41,18 @@ public abstract class Player extends Unit implements HeroicUnit {
 
     @Override
     public void visit(Enemy e){
+        messageCallback.send("--------------------------------------------------------------------------------------------------------------------------");
         messageCallback.send(e.name+" have engaged in battle with "+this.name+"\n");
         int damage =this.defend()-e.attack();
         if(damage>0) {
             this.resource.setCurrentHealth(resource.getCurrentHealth()-damage);
-            messageCallback.send(this.name + " have recieved " + damage + " damage " + "\n");
+            messageCallback.send(this.name + " have recieved " + damage + " damage ");
         }
         else
-            messageCallback.send(e.name+" have missed the attack against "+this.name+"\n");
+            messageCallback.send(e.name+" have missed the attack against "+this.name);
         if(!alive()){
             onDeath(this.position);
         }
-        messageCallback.send(e.describe());
     }
     public void visit(Player p){
 
