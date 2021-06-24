@@ -76,7 +76,6 @@ public abstract class Unit extends Tile {
 		System.out.print("player has marched succesfully");//for check
 
     }
-
     public abstract void visit(Player p);
     public abstract void visit(Enemy e);
 

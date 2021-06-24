@@ -36,6 +36,8 @@ public class Rogue extends Player {
         else{ messageCallback.send(this.name+" doesn't have enough energy"+"\n");}
     }
 
+
+
     @Override
     public void levelUp()
     {

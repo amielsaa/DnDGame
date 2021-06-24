@@ -36,8 +36,10 @@ public abstract class Player extends Unit implements HeroicUnit {
 
     public void accept(Unit u){
         u.visit(this);
+
     }
 
+    @Override
     public void visit(Enemy e){
         messageCallback.send(e.name+" have engaged in battle with "+this.name+"\n");
         int damage =this.defend()-e.attack();
@@ -50,10 +52,12 @@ public abstract class Player extends Unit implements HeroicUnit {
         if(!alive()){
             onDeath(this.position);
         }
+        messageCallback.send(e.describe());
     }
     public void visit(Player p){
 
     }
+
 
     public char getAction(){
         return inputProvider.getAction();

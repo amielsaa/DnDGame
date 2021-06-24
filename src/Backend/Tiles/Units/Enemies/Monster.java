@@ -45,22 +45,22 @@ public class Monster extends Enemy {
         if(Math.abs(xDistance)>Math.abs(yDistance))
         {
             if(xDistance>0)
-            { interact(this.position.getCol()+1,this.position.getRow(),gameBoard); }
+            { interact((this.position.getCol()-1),this.position.getRow(),gameBoard); }
             else
-            { interact(this.position.getCol()-1,this.position.getRow(),gameBoard);}
+            { interact((this.position.getCol()+1),this.position.getRow(),gameBoard);}
         }
         else
         {
             if(yDistance>0)
-            { interact(this.position.getCol(),this.position.getRow()-1,gameBoard); }
+            { interact(this.position.getCol(),(this.position.getRow()-1),gameBoard); }
             else
-            { interact(this.position.getCol(),this.position.getRow()+1,gameBoard);}
+            { interact(this.position.getCol(),(this.position.getRow()+1),gameBoard);}
         }
     }
     private void interact(int colIndex, int rowIndex, GameBoard gameBoard){
         Position oldPosition = this.position;
         Tile tile = gameBoard.findTile(new Position(rowIndex,colIndex));
-        tile.accept(this);
+        tile.visit(this);
         movementCallback.call(oldPosition,this.position);
     }
 }

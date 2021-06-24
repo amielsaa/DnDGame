@@ -79,13 +79,16 @@ public class GameLevel {
 
     }
 
+
+
     public void onEnemyDeath(Enemy e){
         Tile toRemove = gameBoard.findTile(e.getPosition());
+        int index = gameBoard.getIndex(e);
         Position dotPos = new Position(toRemove.getPosition().getRow(),toRemove.getPosition().getCol());
         Tile dot = new Empty(dotPos);
         enemies.remove(e);
         gameBoard.remove(toRemove);
-        gameBoard.add(dot);
+        gameBoard.add(dot,index);
     }
 
     public Player getPlayer(){
