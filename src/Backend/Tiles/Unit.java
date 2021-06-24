@@ -64,7 +64,7 @@ public abstract class Unit extends Tile {
 
 
     // What happens when the unit dies
-    public abstract void onDeath();
+    public abstract void onDeath(Position p);
 
     public void interact(Tile tile){
 
