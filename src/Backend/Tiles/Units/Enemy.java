@@ -19,13 +19,14 @@ public class Enemy extends Unit {
     public void onDeath(Position position) {
         messageCallback.send("enemy"+this.name+"has been defeated");
         movementCallback.call(position, this.position);
+        this.position = new Position(position.getRow(),position.getCol());
         deathCallback.call();
 
     }
 
     @Override
     public void visit(Player p) {
-    messageCallback.send(p.name+" have engaged in battle with "+this.name+ "\n");
+         messageCallback.send(p.name+" have engaged in battle with "+this.name+ "\n");
 
         int damage = p.attack()-this.defend();
         if(damage>0) {
@@ -40,8 +41,7 @@ public class Enemy extends Unit {
         }
         else
             messageCallback.send(p.name + " missed the attack against " +this.name+ "\n");
-        this.describe();
-
+        messageCallback.send(this.describe());
     }
 
     @Override
