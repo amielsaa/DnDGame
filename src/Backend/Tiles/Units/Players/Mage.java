@@ -75,6 +75,10 @@ public class Mage extends Player {
                 "|-------------------------------------------------------|",super.tickDescribe(),mageResorce.getMana());
         //return String.format("%s\t\tLevel: %d\t\tExperience: %d/%d", super.describe(), getLevel(), getExperience(), levelUpRequirement());
     }
+    @Override
+    public void updateResources(){
+        mageResorce.manaOnTick(level);
+    }
 
 
 

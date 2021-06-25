@@ -150,4 +150,5 @@ public abstract class Player extends Unit implements HeroicUnit {
     public void setPlayerDeathCallBack(PlayerDeathCallback deathCallBack) {
         this.deathCallback  = deathCallBack;
     }
+
 }

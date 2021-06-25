@@ -51,5 +51,10 @@ public class Rogue extends Player {
                 "|-------------------------------------------------------|",super.tickDescribe(),rougeResource.getEnergy());
         //return String.format("%s\t\tLevel: %d\t\tExperience: %d/%d", super.describe(), getLevel(), getExperience(), levelUpRequirement());
     }
+    @Override
+    public void updateResources(){
+        rougeResource.energyOnTick();
+    }
+
 
 }

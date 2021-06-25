@@ -13,14 +13,12 @@ public class MageResorce extends Resource {
     public void setUponLevelUp(int mana)
     {
         manaPool = manaPool+mana;
-        if(currentMana>manaPool*0.75)
-            currentMana = manaPool;
-        else
-            currentMana =(int)Math.round(manaPool*1.25);
+        currentMana = Math.min((currentMana+manaPool/4),manaPool);
     }
     public int getMana() { return currentMana; }
     public int getCost(){return cost;}
     public void setMana(){ currentMana = currentMana-cost;}
+    public void manaOnTick(int level){ currentMana = Math.min((currentMana+level),manaPool); }
 
 
 

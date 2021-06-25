@@ -14,11 +14,6 @@ public class RougeResource extends Resource{
     public int getEnergy() { return energy; }
     public int getCost(){return cost;}
     public void setEnergy() { energy = energy-cost; }
-    public void energyOnTick() {
-        if(energy>MAX_ENERGY- ENERGY_BONUS)
-            energy = MAX_ENERGY;
-        else
-            energy = energy+ENERGY_BONUS;
-    }
+    public void energyOnTick() { energy = Math.min((energy+ENERGY_BONUS),MAX_ENERGY); }
     public void resetEnergy() { energy = MAX_ENERGY;}
 }

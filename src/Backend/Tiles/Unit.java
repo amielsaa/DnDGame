@@ -3,6 +3,7 @@ package Backend.Tiles;
 import Backend.Callbacks.DeathCallback;
 import Backend.Callbacks.MessageCallback;
 import Backend.Callbacks.MovementCallback;
+import Backend.Callbacks.VisibilityCallBack;
 import Backend.Tiles.Units.Enemy;
 import Backend.Tiles.Units.Player;
 import Backend.Tile;
@@ -15,6 +16,7 @@ public abstract class Unit extends Tile {
     protected static final NumericGenerator r = NumericGenerator.getInstance();
     protected MessageCallback messageCallback;
     protected MovementCallback movementCallback;
+    protected VisibilityCallBack visibilityCallBack;
 
     public DeathCallback deathCallback;
     public String name;
@@ -78,6 +80,7 @@ public abstract class Unit extends Tile {
     }
     public abstract void visit(Player p);
     public abstract void visit(Enemy e);
+    public abstract void updateResources();
 
     protected void battle(Unit u){
         messageCallback.send(this.getName()+"engaged in battle with "+u.getName());

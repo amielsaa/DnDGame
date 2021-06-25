@@ -11,9 +11,8 @@ import Frontend.GameLevel;
 public class Monster extends Enemy {
 
     int vision;
-    public Monster(char tile, String name, int healthCapacity, int attack, int defense,int vision,int exp) {
+    public Monster(char tile, String name, int healthCapacity, int attack, int defense,int exp,int vision) {
         super(tile, name, healthCapacity, attack, defense,exp);
-
         this.vision=vision;
     }
     @Override
@@ -36,6 +35,7 @@ public class Monster extends Enemy {
                     //stay in place
             }
         }
+
 
     }
     public void chase(Player p ){
@@ -63,4 +63,6 @@ public class Monster extends Enemy {
         tile.visit(this);
         movementCallback.call(oldPosition,this.position);
     }
+    @Override
+    public void updateResources(){}
 }

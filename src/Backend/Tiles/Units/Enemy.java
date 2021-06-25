@@ -3,7 +3,7 @@ package Backend.Tiles.Units;
 import Backend.Tiles.Unit;
 import Backend.Utils.Position;
 
-public class Enemy extends Unit {
+public abstract class Enemy extends Unit {
     int exp;
     protected Enemy(char tile, String name, int healthCapacity, int attack, int defense,int exp) {
         super(tile, name, healthCapacity, attack, defense);
@@ -39,7 +39,7 @@ public class Enemy extends Unit {
     @Override
     public void visit(Player p) {
         messageCallback.send("--------------------------------------------------------------------------------------------------------------------------");
-        messageCallback.send(p.name+" has engaged in battle with "+this.name+ "\n");
+        messageCallback.send(p.name+" have engaged in battle with "+this.name+ "\n");
 
         int damage = p.attack()-this.defend();
         if(damage>0) {

@@ -62,5 +62,10 @@ public class Warrior extends Player {
                 "|-------------------------------------------------------|",super.tickDescribe(),warriorResource.getRemainingCooldown());
         //return String.format("%s\t\tLevel: %d\t\tExperience: %d/%d", super.describe(), getLevel(), getExperience(), levelUpRequirement());
     }
+    @Override
+    public void updateResources(){
+        warriorResource.cooldownOnTick();
+    }
+
 
 }
