@@ -15,6 +15,10 @@ public abstract class Enemy extends Unit {
 
     }
 
+    public void setTile(char newTile) {
+        this.tile = newTile;
+    }
+
 
     public void onDeath(Position position, Player p) {
 

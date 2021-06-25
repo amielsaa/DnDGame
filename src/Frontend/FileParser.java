@@ -43,6 +43,7 @@ public class FileParser {
                         break;
                     default:
                         Enemy e = tileFactory.enemiesMap.get(arr.get(i).charAt(j)).get();
+                        //if(e.)
                         e.setDeathCallback(() -> m.onEnemyDeath(e));
                         e.setMessageCallback((msg) -> System.out.println(msg));
                         e.setMovementCallback((positionA,positionB)->m.onMovementCall(positionA,positionB));//AMIEEEEEEEELLLLLLLLLLLL
