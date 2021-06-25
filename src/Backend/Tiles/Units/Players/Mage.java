@@ -42,12 +42,12 @@ public class Mage extends Player {
             }
             if(closeEnemies.size()!=0)
                 messageCallback.send(this.name+" have used Blizzard, "+"\n");
-            for (Enemy enemy : closeEnemies)
+            for (int i =0; i<closeEnemies.size();i++)
             {
                 if(hits<hitsCount) {
                     double coinflip = NumericGenerator.getInstance().nextDouble();
                     if (coinflip > 0.5) {
-                        enemy.acceptAbility(this,spellPower);
+                        closeEnemies.get(i).acceptAbility(this,spellPower);
                         hits = hits + 1;
                     }
                 }

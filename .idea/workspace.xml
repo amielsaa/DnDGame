@@ -21,18 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="93a36a35-438e-41f7-a0b2-0bb751b54a6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Monster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/MageResorce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/MageResorce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/WarriorResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/WarriorResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Callbacks/VisibilityCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Callbacks/VisibilityCallBack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Utils/TrapResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/TrapResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameLevel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,6 +232,11 @@
           <url>file://$PROJECT_DIR$/src/Frontend/GameManager.java</url>
           <line>58</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Backend/Tiles/Units/Enemy.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
