@@ -46,4 +46,10 @@ public class Rogue extends Player {
         rougeResource.resetEnergy();
     }
 
+    public String tickDescribe() {
+        return String.format("%s\t\tEnergy: %d\t\t|\n" +
+                "|-------------------------------------------------------|",super.tickDescribe(),rougeResource.getEnergy());
+        //return String.format("%s\t\tLevel: %d\t\tExperience: %d/%d", super.describe(), getLevel(), getExperience(), levelUpRequirement());
+    }
+
 }

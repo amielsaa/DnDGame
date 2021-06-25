@@ -22,12 +22,15 @@
     <list default="true" id="27ae4c1a-a6d7-4df3-a0a5-5674e14fc9b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Mage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Rogue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/GameLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frontend/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/GameManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/TileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/TileFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,22 +163,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="230" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624452892198" />
-    <state width="1877" height="223" key="GridCell.Tab.0.bottom" timestamp="1624590440352">
+    <state width="1877" height="393" key="GridCell.Tab.0.bottom" timestamp="1624591892620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440352" />
-    <state width="1877" height="223" key="GridCell.Tab.0.center" timestamp="1624590440352">
+    <state width="1877" height="393" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
+    <state width="1877" height="393" key="GridCell.Tab.0.center" timestamp="1624591892620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="223" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440352" />
-    <state width="1877" height="223" key="GridCell.Tab.0.left" timestamp="1624590440352">
+    <state width="1877" height="393" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
+    <state width="1877" height="393" key="GridCell.Tab.0.left" timestamp="1624591892620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="223" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440352" />
-    <state width="1877" height="223" key="GridCell.Tab.0.right" timestamp="1624590440352">
+    <state width="1877" height="393" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
+    <state width="1877" height="393" key="GridCell.Tab.0.right" timestamp="1624591892620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="223" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440352" />
+    <state width="1877" height="393" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
     <state width="1877" height="223" key="GridCell.Tab.1.bottom" timestamp="1624590440353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -201,10 +204,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="474" y="256" width="971" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1624567555819" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1624532941828">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1624591707013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1624532941828" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1624591707013" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
