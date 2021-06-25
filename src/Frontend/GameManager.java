@@ -57,7 +57,7 @@ public class GameManager {
             }
 
             won = player.alive() & gameLevel.enemies.size()== 0;
-            if(won & levelFiles.size() == i-1){
+            if(won & levelFiles.size() == i+1){
                 System.out.println("You won!");
             }
 

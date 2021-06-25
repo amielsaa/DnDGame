@@ -16,6 +16,7 @@ public class Wall extends Tile {
     public void accept(Unit unit) {
 
     }
+    public boolean isEmpty() {return false;}
     public void visit(Enemy e){}
     public void visit(Player p){}
 }

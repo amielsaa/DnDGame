@@ -102,7 +102,7 @@ public abstract class Unit extends Tile {
 
 
 
-
+    public boolean isEmpty() {return false;}
 
 
     //SETTERS FOR CHEATS
