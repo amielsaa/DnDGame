@@ -20,19 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93a36a35-438e-41f7-a0b2-0bb751b54a6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Utils/TrapResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/TrapResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frontend/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,33 +145,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624452899166">
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624660164684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624660164684" />
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624452899166" />
     <state x="740" y="230" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1624452892198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="230" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624452892198" />
-    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1624659306362">
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom" timestamp="1624661106431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659306362" />
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624661106431" />
     <state width="1877" height="393" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1624659306361">
+    <state width="1877" height="415" key="GridCell.Tab.0.center" timestamp="1624661106431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659306361" />
+    <state width="1877" height="415" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624661106431" />
     <state width="1877" height="393" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1624659306361">
+    <state width="1877" height="415" key="GridCell.Tab.0.left" timestamp="1624661106430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659306361" />
+    <state width="1877" height="415" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624661106430" />
     <state width="1877" height="393" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1624659306362">
+    <state width="1877" height="415" key="GridCell.Tab.0.right" timestamp="1624661106431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="313" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659306362" />
+    <state width="1877" height="415" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624661106431" />
     <state width="1877" height="393" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
     <state width="1877" height="485" key="GridCell.Tab.1.bottom" timestamp="1624659121378">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -204,10 +194,10 @@
     </state>
     <state width="1877" height="485" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659121378" />
     <state width="1877" height="223" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440353" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1624452858564">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1624660147077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624396037687" />
+    <state x="440" y="94" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624660147077" />
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1624452858564" />
     <state x="474" y="256" width="971" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1624567555819">
       <screen x="0" y="0" width="1920" height="1040" />
