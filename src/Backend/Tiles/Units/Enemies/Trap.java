@@ -9,7 +9,7 @@ public class Trap extends Enemy {
     int vision;
     public Trap(char tile, String name, int healthCapacity, int attack, int defense, int exp, int visibleTime, int invisibleTime) {
         super(tile, name, healthCapacity, attack, defense,exp);
-        trapResource = new TrapResource(healthCapacity, visibleTime, invisibleTime,visibilityCallBack, tile);
+        trapResource = new TrapResource(healthCapacity, visibleTime, invisibleTime, tile);
         vision = 2;
 
     }
@@ -20,5 +20,7 @@ public class Trap extends Enemy {
             p.visit(this);
     }
     @Override
-    public void updateResources(){}
+    public void updateResources(){
+        trapResource.setVisibilityCallBack(visibilityCallBack);
+    }
 }

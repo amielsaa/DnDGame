@@ -2,6 +2,7 @@ package Backend.Tiles.Units;
 
 import Backend.Callbacks.MessageCallback;
 import Backend.Callbacks.PlayerDeathCallback;
+import Backend.Callbacks.VisibilityCallBack;
 import Backend.Tiles.Unit;
 import Backend.Utils.Position;
 import Frontend.Action;
