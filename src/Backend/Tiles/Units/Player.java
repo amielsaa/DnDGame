@@ -91,6 +91,7 @@ public abstract class Player extends Unit implements HeroicUnit {
         defense = defense +gainDefense()+defAdd;
         experience = experience-(levelUpRequirement());
         level = level+1;
+        messageCallback.send("|-----------------------LEVELED UP----------------------|");
     }
 
     @Override
