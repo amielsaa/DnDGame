@@ -53,15 +53,15 @@ public class GameLevel {
             //cast ability
             if(nextPosition.getCol()==0&nextPosition.getRow()==0){
                 player.CastAbility(enemies);
-            } else{ //moving
+            }
+            else{ //moving
                 Tile tileToInteract = gameBoard.findTile( new Position(player.getPosition().getRow()+nextPosition.getRow(),player.getPosition().getCol()+nextPosition.getCol()) );
                 player.interact(tileToInteract);
                 if(tileToInteract.getTile() == '.'){
                     gameBoard.SwitchPositions(tileToInteract,player);
                 }
             }
-
-
+            player.updateResources();
             enemyProcessStep();
             System.out.println(player.tickDescribe());
             gameBoard.Printall();

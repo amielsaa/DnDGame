@@ -7,21 +7,26 @@ public class TrapResource extends Resource {
     public int invisbleTime;
     public boolean visible;
     private int ticksCount;
+    char tilechar;
     public VisibilityCallBack visibilityCallBack;
 
-    public TrapResource(int healthCapacity, int visibleTime, int invisibleTime, VisibilityCallBack v){
+    public TrapResource(int healthCapacity, int visibleTime, int invisibleTime, VisibilityCallBack v,char tile){
         super(healthCapacity,healthCapacity);
         this.visibleTime = visibleTime;
         this.invisbleTime = invisibleTime;
         visible = true;
         ticksCount = 0;
-        //this.visibilityCallBack = v;
+        tilechar =tile;
+        this.visibilityCallBack = v;
 
     }
     public void visibilityOnTick()
     {
         visible = ticksCount<visibleTime;
-        //visibilityCallBack.call(visible);
+        if(visible)
+            visibilityCallBack.call(tilechar);
+        else
+            visibilityCallBack.call('.');
         if(ticksCount==(visibleTime+invisbleTime))
             ticksCount=0;
         else

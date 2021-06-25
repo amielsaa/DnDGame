@@ -1,5 +1,5 @@
 package Backend.Callbacks;
 
 public interface VisibilityCallBack {
-    void call(boolean visibility);
+    void call(char visibilitychar);
 }

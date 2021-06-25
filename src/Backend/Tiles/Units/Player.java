@@ -124,14 +124,15 @@ public abstract class Player extends Unit implements HeroicUnit {
     }
     public void gaindExperience (int exp) {
         experience = experience+exp;
-        if(experience>levelUpRequirement())
+        if(experience>=levelUpRequirement())
             this.levelUp();
     }
     public void levelUp()
     {
         System.out.println("not the right one");
     }
-
+    @Override
+    public void updateResources(){};
 
 
     public String describe() {

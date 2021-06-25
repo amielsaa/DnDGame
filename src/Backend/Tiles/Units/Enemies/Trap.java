@@ -9,7 +9,7 @@ public class Trap extends Enemy {
     int vision;
     public Trap(char tile, String name, int healthCapacity, int attack, int defense, int exp, int visibleTime, int invisibleTime) {
         super(tile, name, healthCapacity, attack, defense,exp);
-        trapResource = new TrapResource(healthCapacity, visibleTime, invisibleTime,visibilityCallBack);
+        trapResource = new TrapResource(healthCapacity, visibleTime, invisibleTime,visibilityCallBack, tile);
         vision = 2;
 
     }

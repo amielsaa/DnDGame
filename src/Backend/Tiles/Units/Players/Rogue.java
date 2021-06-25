@@ -21,12 +21,12 @@ public class Rogue extends Player {
     public void CastAbility(List<Enemy> e) {
         if(rougeResource.getEnergy()>rougeResource.getCost()) {
             int hits=0;
-            for (Enemy enemy : e)
+            for (int i=0 ; i<e.size(); i++)
             {
-                int distance = this.CheckDistance(enemy);
+                int distance = this.CheckDistance(e.get(i));
                 if (distance <2 )
                 {
-                    enemy.acceptAbility(this,attack);
+                    e.get(i).acceptAbility(this,attack);
                     hits = hits+1;
                 }
             }
