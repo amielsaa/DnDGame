@@ -7,9 +7,9 @@ import Backend.Utils.TrapResource;
 public class Trap extends Enemy {
    public TrapResource trapResource;
     int vision;
-    public Trap(char tile, String name, int healthCapacity, int attack, int defense, int exp, int visableTime, int invisbleTime) {
+    public Trap(char tile, String name, int healthCapacity, int attack, int defense, int exp, int visibleTime, int invisibleTime) {
         super(tile, name, healthCapacity, attack, defense,exp);
-        trapResource = new TrapResource(healthCapacity, visableTime, invisbleTime,visibilityCallBack);
+        trapResource = new TrapResource(healthCapacity, visibleTime, invisibleTime,visibilityCallBack);
         vision = 2;
 
     }
