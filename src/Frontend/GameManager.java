@@ -39,12 +39,11 @@ public class GameManager {
             levelFiles = Arrays.stream(levelsDir.listFiles())
                     .filter(s -> s.getName().matches("^level\\d+\\.txt$"))
                     .collect(Collectors.toList());
-        boolean won = false;
-        //gameLevel.loadLevel(levelFiles.get(1));
+        boolean won = true;
 
 
 
-        for(int i = 0;i<levelFiles.size() & !won;i++) {
+        for(int i = 0;i<levelFiles.size() & won;i++) {
             //levels loop
 
             gameLevel.loadLevel(levelFiles.get(i));

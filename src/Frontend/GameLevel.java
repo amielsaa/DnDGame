@@ -49,11 +49,17 @@ public class GameLevel {
         if(action.length()==1 && nextPosition!=null){
             player.setInputProvider(()-> action.charAt(0));
 
-            Tile tileToInteract = gameBoard.findTile( new Position(player.getPosition().getRow()+nextPosition.getRow(),player.getPosition().getCol()+nextPosition.getCol()) );
-            player.interact(tileToInteract);
-            if(tileToInteract.getTile() == '.'){
-                gameBoard.SwitchPositions(tileToInteract,player);
+            //cast ability
+            if(nextPosition.getCol()==0&nextPosition.getRow()==0){
+                player.CastAbility(enemies);
+            } else{ //moving
+                Tile tileToInteract = gameBoard.findTile( new Position(player.getPosition().getRow()+nextPosition.getRow(),player.getPosition().getCol()+nextPosition.getCol()) );
+                player.interact(tileToInteract);
+                if(tileToInteract.getTile() == '.'){
+                    gameBoard.SwitchPositions(tileToInteract,player);
+                }
             }
+
 
             enemyProcessStep();
             System.out.println(player.tickDescribe());
@@ -72,7 +78,6 @@ public class GameLevel {
         }
 
     }
-
 
 
     public void onPlayerDeath(){
@@ -112,7 +117,7 @@ public class GameLevel {
             case 'w':
                 return new Position(-1,0);
             case 'e':
-                //return player.;
+                return new Position(0,0);
             default:
                 return null;
         }
