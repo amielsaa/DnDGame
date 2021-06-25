@@ -70,6 +70,12 @@ public class Mage extends Player {
 
     }
 
+    public String tickDescribe() {
+        return String.format("%s\t\tMana: %d\t\t|\n" +
+                "|-------------------------------------------------------|",super.tickDescribe(),mageResorce.getMana());
+        //return String.format("%s\t\tLevel: %d\t\tExperience: %d/%d", super.describe(), getLevel(), getExperience(), levelUpRequirement());
+    }
+
 
 
 }

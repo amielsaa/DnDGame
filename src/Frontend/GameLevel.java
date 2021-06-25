@@ -45,20 +45,44 @@ public class GameLevel {
     }
 
     public void tick(String action){
+        cheatShit(action);
         Position nextPosition = getInteractPosition(action);
         if(action.length()==1 && nextPosition!=null){
             player.setInputProvider(()-> action.charAt(0));
 
-            Tile tileToInteract = gameBoard.findTile( new Position(player.getPosition().getRow()+nextPosition.getRow(),player.getPosition().getCol()+nextPosition.getCol()) );
-            player.interact(tileToInteract);
-            if(tileToInteract.getTile() == '.'){
-                gameBoard.SwitchPositions(tileToInteract,player);
+            //cast ability
+            if(nextPosition.getCol()==0&nextPosition.getRow()==0){
+                player.CastAbility(enemies);
+            } else{ //moving
+                Tile tileToInteract = gameBoard.findTile( new Position(player.getPosition().getRow()+nextPosition.getRow(),player.getPosition().getCol()+nextPosition.getCol()) );
+                player.interact(tileToInteract);
+                if(tileToInteract.getTile() == '.'){
+                    gameBoard.SwitchPositions(tileToInteract,player);
+                }
             }
+
 
             enemyProcessStep();
             System.out.println(player.tickDescribe());
             gameBoard.Printall();
         }
+
+    }
+
+    private void cheatShit(String cheat) {
+        if(cheat.equals("GAYPOWER")) {
+            player.setAttack(player.getAttack()+500);
+            player.setDefense(player.getDefense()+500);
+            player.setHealth(player.getResource().getHealthCapacity()+1000);
+            player.heal(player.getResource().getCurrentHealth()+1000);
+        }
+        else if(cheat.equals("MAYONAISE"))
+            player.setAttack(player.getAttack()+500);
+        else if(cheat.equals("KETCHUP")) {
+            player.setHealth(player.getResource().getHealthCapacity()+1000);
+            player.heal(player.getResource().getCurrentHealth()+1000);
+        } else if(cheat.equals("PEENUT"))
+            player.setDefense(player.getDefense()+500);
 
     }
 
@@ -72,7 +96,6 @@ public class GameLevel {
         }
 
     }
-
 
 
     public void onPlayerDeath(){
@@ -112,7 +135,7 @@ public class GameLevel {
             case 'w':
                 return new Position(-1,0);
             case 'e':
-                //return player.;
+                return new Position(0,0);
             default:
                 return null;
         }

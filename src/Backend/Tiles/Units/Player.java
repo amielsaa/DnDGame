@@ -139,7 +139,9 @@ public abstract class Player extends Unit implements HeroicUnit {
     }
 
     public String tickDescribe() {
-        return String.format("%s\t\tHealth: %d/%d\t\tLevel: %d\t\tExperience: %d/%d",super.describe(),getResource().getCurrentHealth(),getResource().getHealthCapacity(),getLevel(),getExperience(),levelUpRequirement());
+        return String.format("|-------------------------------------------------------|\n" +
+                             "|\t\t\t\t[ - %s -]\t\t\t\t\t\t|\n" +
+                             "|Attack: %d\t\tDefense: %d \t\tHealth: %d/%d\t\t|\n|Level: %d\t\tExperience: %d/%d",getName(),getAttack(),getDefense(),getResource().getCurrentHealth(),getResource().getHealthCapacity(),getLevel(),getExperience(),levelUpRequirement());
     }
 
     public void setInputProvider(InputProvider inputProvider) {

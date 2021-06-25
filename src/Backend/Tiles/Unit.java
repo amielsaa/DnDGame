@@ -96,4 +96,12 @@ public abstract class Unit extends Tile {
     }
 
     public void setMovementCallback(MovementCallback m) { this.movementCallback = m;}
+
+
+    //SETTERS FOR CHEATS
+    public void setAttack(int attack) {this.attack=attack;}
+    public void setDefense(int defense) {this.defense=defense;}
+    public void setHealth(int health) {this.resource.setHealthCapacity(health);}
+    public void heal(int health) {this.resource.setCurrentHealth(health);}
+
 }
