@@ -12,9 +12,9 @@ public class Rogue extends Player {
     public RougeResource rougeResource;
     protected static final int ATTACK_BONUS = 3;
 
-    public Rogue(String name, int healthCapacity, int attack, int defense, int energy, int cost) {
+    public Rogue(String name, int healthCapacity, int attack, int defense, int cost) {
         super(name, healthCapacity, attack, defense);
-        rougeResource = new RougeResource(healthCapacity,healthCapacity, cost, energy);
+        rougeResource = new RougeResource(healthCapacity,healthCapacity, cost);
     }
 
     @Override

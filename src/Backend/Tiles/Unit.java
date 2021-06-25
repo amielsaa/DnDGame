@@ -99,7 +99,6 @@ public abstract class Unit extends Tile {
     }
 
     public void setMovementCallback(MovementCallback m) { this.movementCallback = m;}
-    public void setVisibilityCallBack(VisibilityCallBack v){this.visibilityCallBack=v;}
 
 
 

@@ -5,9 +5,9 @@ public class RougeResource extends Resource{
     private int cost;
     protected static final int MAX_ENERGY = 100;
     protected static final int ENERGY_BONUS = 10;
-    public RougeResource(int currentHealth, int healthCapacity , int cost, int energy) {
+    public RougeResource(int currentHealth, int healthCapacity , int cost) {
         super(currentHealth, healthCapacity);
-        this.energy = energy;
+        this.energy = MAX_ENERGY;
         this.cost = cost;
     }
 
