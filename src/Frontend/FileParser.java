@@ -43,12 +43,16 @@ public class FileParser {
                         break;
                     default:
                         Enemy e = tileFactory.enemiesMap.get(arr.get(i).charAt(j)).get();
+
                         e.setDeathCallback(() -> m.onEnemyDeath(e));
-                        e.setMessageCallback((msg) -> System.out.println(msg));
+                        e.setVisibilityCallBack((c) -> m.onVisibilityCall(c,e));
+                        e.updateResources();
                         e.setMovementCallback((positionA,positionB)->m.onMovementCall(positionA,positionB));//AMIEEEEEEEELLLLLLLLLLLL
+                        e.initialize(p,(msg) -> System.out.println(msg),(c) -> m.onVisibilityCall(c,e));
                         board.add(e);
                         GameLevel.getInstance().enemies.add(e);
-                        e.initialize(p);
+
+
                         break;
                 }
             }

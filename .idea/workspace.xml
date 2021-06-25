@@ -21,7 +21,21 @@
   <component name="ChangeListManager">
     <list default="true" id="93a36a35-438e-41f7-a0b2-0bb751b54a6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Frontend/GameLevel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemies/Trap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Utils/TrapResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/TrapResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/FileParser.java" afterDir="false" />
+>>>>>>> 186d1fc305d0ceccdf72f96a98c10ca04b02ec5d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +70,6 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.GameManager">
     <configuration name="GameLevel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -118,13 +120,13 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8714bc18-4d46-439b-b2c3-2d18fbdadc44" name="Default Changelist" comment="" />
+      <changelist id="27ae4c1a-a6d7-4df3-a0a5-5674e14fc9b4" name="Default Changelist" comment="" />
       <created>1622712872046</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -149,12 +151,12 @@
                   </entry>
                 </map>
               </option>
-              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624452899166">
@@ -165,37 +167,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="230" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624452892198" />
-    <state width="1877" height="393" key="GridCell.Tab.0.bottom" timestamp="1624591892620">
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1624659306362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659306362" />
     <state width="1877" height="393" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="393" key="GridCell.Tab.0.center" timestamp="1624591892620">
+    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1624659306361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659306361" />
     <state width="1877" height="393" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="393" key="GridCell.Tab.0.left" timestamp="1624591892620">
+    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1624659306361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659306361" />
     <state width="1877" height="393" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="393" key="GridCell.Tab.0.right" timestamp="1624591892620">
+    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1624659306362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="313" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659306362" />
     <state width="1877" height="393" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="223" key="GridCell.Tab.1.bottom" timestamp="1624590440353">
+    <state width="1877" height="485" key="GridCell.Tab.1.bottom" timestamp="1624659121378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="485" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659121378" />
     <state width="1877" height="223" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440353" />
-    <state width="1877" height="223" key="GridCell.Tab.1.center" timestamp="1624590440352">
+    <state width="1877" height="485" key="GridCell.Tab.1.center" timestamp="1624659121378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="485" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659121378" />
     <state width="1877" height="223" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440352" />
-    <state width="1877" height="223" key="GridCell.Tab.1.left" timestamp="1624590440352">
+    <state width="1877" height="485" key="GridCell.Tab.1.left" timestamp="1624659121378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="485" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659121378" />
     <state width="1877" height="223" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440352" />
-    <state width="1877" height="223" key="GridCell.Tab.1.right" timestamp="1624590440353">
+    <state width="1877" height="485" key="GridCell.Tab.1.right" timestamp="1624659121378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="485" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624659121378" />
     <state width="1877" height="223" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440353" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1624452858564">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -224,9 +234,12 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Backend/Tiles/Units/Enemy.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="31" />
+          <url>file://$PROJECT_DIR$/src/Frontend/FileParser.java</url>
+          <line>53</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,18 +1,35 @@
 package Backend.Tiles.Units;
 
+import Backend.Callbacks.MessageCallback;
+import Backend.Callbacks.PlayerDeathCallback;
+import Backend.Callbacks.VisibilityCallBack;
 import Backend.Tiles.Unit;
 import Backend.Utils.Position;
+import Frontend.Input.InputProvider;
 
 public abstract class Enemy extends Unit {
     int exp;
+    protected VisibilityCallBack visibilityCallBack;
+
     protected Enemy(char tile, String name, int healthCapacity, int attack, int defense,int exp) {
         super(tile, name, healthCapacity, attack, defense);
         this.exp=exp;
     }
 
+    public void initialize(Position position, MessageCallback messageCallback, VisibilityCallBack visibilityCallBack){
+        super.initialize(position, messageCallback);
+        this.deathCallback = deathCallback;
+        this.visibilityCallBack = visibilityCallBack;
+        //return this;
+    }
+
 
     public void processStep(Player p) {
 
+    }
+
+    public void setTile(char newTile) {
+        this.tile = newTile;
     }
 
 
@@ -76,5 +93,7 @@ public abstract class Enemy extends Unit {
             }
         }
     }
+    public void setVisibilityCallBack(VisibilityCallBack v){this.visibilityCallBack=v;}
+
 
 }

@@ -16,7 +16,7 @@ public abstract class Unit extends Tile {
     protected static final NumericGenerator r = NumericGenerator.getInstance();
     protected MessageCallback messageCallback;
     protected MovementCallback movementCallback;
-    protected VisibilityCallBack visibilityCallBack;
+
 
     public DeathCallback deathCallback;
     public String name;
@@ -100,6 +100,9 @@ public abstract class Unit extends Tile {
 
     public void setMovementCallback(MovementCallback m) { this.movementCallback = m;}
     public void setVisibilityCallBack(VisibilityCallBack v){this.visibilityCallBack=v;}
+
+
+
 
 
     //SETTERS FOR CHEATS

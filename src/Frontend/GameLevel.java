@@ -90,6 +90,10 @@ public class GameLevel {
         gameBoard.SwitchPositions(gameBoard.findTile(pos1),gameBoard.findTile(pos2));
     }
 
+    public void onVisibilityCall(char enemy,Enemy e) {
+        e.setTile(enemy);
+    }
+
     private void enemyProcessStep() {
         for(int i =0;i<enemies.size();i++) {
             enemies.get(i).processStep(player);
