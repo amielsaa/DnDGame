@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="93a36a35-438e-41f7-a0b2-0bb751b54a6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Unit.java" afterDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemies/Trap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Enemy.class" afterDir="false" />
@@ -35,7 +33,6 @@
       <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backend/Utils/TrapResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/TrapResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/FileParser.java" afterDir="false" />
->>>>>>> 186d1fc305d0ceccdf72f96a98c10ca04b02ec5d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

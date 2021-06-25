@@ -84,7 +84,8 @@ public abstract class Player extends Unit implements HeroicUnit {
 
     // Backend.Tiles.Units.Player level up
     protected void levelUp( int defAdd, int attackAdd, int hpAdd){
-        resource.setHealthCapacity(resource.getHealthCapacity()+gainHealth()+hpAdd);
+        int newHealthCapacity = resource.getHealthCapacity()+gainHealth()+hpAdd;
+        resource.setHealthCapacity(newHealthCapacity);
         resource.setCurrentHealth(resource.getHealthCapacity());
         attack = attack+ gainAttack()+attackAdd;
         defense = defense +gainDefense()+defAdd;
