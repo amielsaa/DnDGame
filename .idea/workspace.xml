@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="93a36a35-438e-41f7-a0b2-0bb751b54a6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Unit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Utils/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Utils/Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DND" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -158,26 +155,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="230" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624452892198" />
-    <state width="1877" height="443" key="GridCell.Tab.0.bottom" timestamp="1624662987282">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1624728932020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="443" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624662987282" />
-    <state width="1877" height="393" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="443" key="GridCell.Tab.0.center" timestamp="1624662987282">
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624728932020" />
+    <state width="1877" height="800" key="GridCell.Tab.0.bottom" timestamp="1624727780932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="443" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624662987282" />
-    <state width="1877" height="393" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="443" key="GridCell.Tab.0.left" timestamp="1624662987281">
+    <state width="1877" height="800" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624727780932" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624699133530" />
+    <state width="1877" height="800" key="GridCell.Tab.0.center" timestamp="1624727780931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="443" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624662987281" />
-    <state width="1877" height="393" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
-    <state width="1877" height="443" key="GridCell.Tab.0.right" timestamp="1624662987282">
+    <state width="1877" height="800" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624727780931" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624699133530" />
+    <state width="1877" height="800" key="GridCell.Tab.0.left" timestamp="1624727780930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="443" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624662987282" />
-    <state width="1877" height="393" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624591892620" />
+    <state width="1877" height="800" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624727780930" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624699133530" />
+    <state width="1877" height="800" key="GridCell.Tab.0.right" timestamp="1624727780931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="800" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624727780931" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624699133530" />
     <state width="1877" height="393" key="GridCell.Tab.1.bottom" timestamp="1624662697315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -231,14 +232,6 @@
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Backend/Tiles/Units/Player.java</url>
-          <line>85</line>
-          <properties class="Backend.Tiles.Units.Player" method="levelUp">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
