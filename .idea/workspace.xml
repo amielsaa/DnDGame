@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93a36a35-438e-41f7-a0b2-0bb751b54a6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Rogue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Utils/RougeResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,18 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.GameManager">
     <configuration name="GameLevel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -106,7 +117,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -137,12 +148,12 @@
                   </entry>
                 </map>
               </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624660164684">
