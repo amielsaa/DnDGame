@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93a36a35-438e-41f7-a0b2-0bb751b54a6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/JUnit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Backend/Tiles/Units/EnemyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project D&amp;D/Backend/Tiles/Units/Players/Warrior.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backend/Tiles/Units/Players/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project D&amp;D.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project D&amp;D.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +34,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -47,18 +49,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DND" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Calculator/lib/apiguardian-api-1.0.0.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Backend.Tiles.Units" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GameManager">
+  <component name="RunManager" selected="JUnit.PlayerTest">
     <configuration name="GameLevel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Frontend.GameLevel" />
       <module name="project D&amp;D" />
@@ -94,13 +111,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project D&amp;D" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Backend.Tiles.Units.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Backend.Tiles.Units" />
+      <option name="MAIN_CLASS_NAME" value="Backend.Tiles.Units.PlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests" type="JUnit" factoryName="JUnit">
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.GameLevel" />
       <item itemvalue="Application.GameManager" />
       <item itemvalue="Application.Position" />
+      <item itemvalue="JUnit.Tests" />
+      <item itemvalue="JUnit.PlayerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.GameManager" />
         <item itemvalue="Application.Position" />
         <item itemvalue="Application.GameLevel" />
@@ -146,6 +192,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1624738481957">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624738481957" />
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624660164684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -155,55 +205,71 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="230" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624452892198" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1624728932020">
+    <state x="715" y="230" width="415" height="612" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1624738443163">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624728932020" />
-    <state width="1877" height="800" key="GridCell.Tab.0.bottom" timestamp="1624727780932">
+    <state x="715" y="230" width="415" height="612" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624738443163" />
+    <state x="690" y="274" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1624738365102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="800" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624727780932" />
+    <state x="690" y="274" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624738365102" />
+    <state x="567" y="467" key="FileChooserDialogImpl" timestamp="1624738439357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="467" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624738439357" />
+    <state width="1877" height="393" key="GridCell.Tab.0.bottom" timestamp="1624745026662">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="393" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624745026662" />
     <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624699133530" />
-    <state width="1877" height="800" key="GridCell.Tab.0.center" timestamp="1624727780931">
+    <state width="1877" height="393" key="GridCell.Tab.0.center" timestamp="1624745026661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="800" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624727780931" />
+    <state width="1877" height="393" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624745026661" />
     <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624699133530" />
-    <state width="1877" height="800" key="GridCell.Tab.0.left" timestamp="1624727780930">
+    <state width="1877" height="393" key="GridCell.Tab.0.left" timestamp="1624745026661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="800" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624727780930" />
+    <state width="1877" height="393" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624745026661" />
     <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624699133530" />
-    <state width="1877" height="800" key="GridCell.Tab.0.right" timestamp="1624727780931">
+    <state width="1877" height="393" key="GridCell.Tab.0.right" timestamp="1624745026661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="800" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624727780931" />
+    <state width="1877" height="393" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624745026661" />
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624699133530" />
-    <state width="1877" height="393" key="GridCell.Tab.1.bottom" timestamp="1624662697315">
+    <state width="1877" height="393" key="GridCell.Tab.1.bottom" timestamp="1624745027547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624662697315" />
+    <state width="1877" height="393" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624745027547" />
     <state width="1877" height="223" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440353" />
-    <state width="1877" height="393" key="GridCell.Tab.1.center" timestamp="1624662697315">
+    <state width="1877" height="393" key="GridCell.Tab.1.center" timestamp="1624745027547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624662697315" />
+    <state width="1877" height="393" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624745027547" />
     <state width="1877" height="223" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440352" />
-    <state width="1877" height="393" key="GridCell.Tab.1.left" timestamp="1624662697315">
+    <state width="1877" height="393" key="GridCell.Tab.1.left" timestamp="1624745027547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624662697315" />
+    <state width="1877" height="393" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624745027547" />
     <state width="1877" height="223" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440352" />
-    <state width="1877" height="393" key="GridCell.Tab.1.right" timestamp="1624662697315">
+    <state width="1877" height="393" key="GridCell.Tab.1.right" timestamp="1624745027547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624662697315" />
+    <state width="1877" height="393" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624745027547" />
     <state width="1877" height="223" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624590440353" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1624660147077">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1624739355385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624660147077" />
+    <state x="440" y="94" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624739355385" />
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1624452858564" />
+    <state x="664" y="411" width="591" height="223" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1624739345646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="411" width="591" height="223" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624739345646" />
+    <state x="724" y="188" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1624738568716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="724" y="188" key="com.intellij.testIntegration.createTest.CreateTestDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1624738568716" />
     <state x="474" y="256" width="971" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1624567555819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -232,6 +298,11 @@
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Tests/Backend/Tiles/Units/PlayerTest.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
