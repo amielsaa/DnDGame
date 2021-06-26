@@ -38,7 +38,7 @@ public class Warrior extends Player {
             }
             else
                 messageCallback.send(this.name+"'s Avengers Shield didn't hit anyone" +"\n");
-            
+
             warriorResource.castedAbility();
         }
         else
