@@ -2,6 +2,7 @@ package Backend.Tiles.Units;
 
 import Backend.Tiles.Empty;
 import Backend.Tiles.Units.Enemies.Monster;
+import Backend.Tiles.Units.Enemies.Trap;
 import Backend.Tiles.Units.Players.Mage;
 import Backend.Tiles.Units.Players.Warrior;
 import Backend.Utils.Position;
@@ -19,15 +20,12 @@ class PlayerTest {
     static TileFactory tileFactory;
     static Player player;
     static List<Enemy> enemies;
-    //static GameBoard gameBoard;
 
     @BeforeAll
     static void setUpBeforeAll() {
         tileFactory = new TileFactory();
-        player = new Warrior("roobs", 300, 30, 4, 3);
-        //player = new Warrior("Ari Snow",400,50,5,3);
+        player = new Warrior("Jon Snow", 300, 30, 4, 3);
         enemies = new ArrayList<Enemy>();
-        //gameBoard = new GameBoard();
 
     }
 
@@ -35,56 +33,37 @@ class PlayerTest {
 
         Enemy e=new Monster('k',"enemy1",200,14,8,4,50);
         Enemy a=new Monster('s',"enemy2",200,14,8,4,50);
-        Enemy b=new Monster('a',"enemy3",200,14,8,4,50);
-        Enemy c=new Monster('b',"enemy4",200,14,8,4,50);
-        Enemy d=new Monster('d',"enemy5",200,14,8,4,50);
-        Enemy f=new Monster('j',"enemy6",200,14,8,4,50);
+        Enemy c=new Monster('b',"enemy3",200,14,8,4,50);
+        Enemy d=new Monster('d',"enemy4",1000,1000,8,4,50);
+        Enemy f=new Trap('j',"TRAP",500, 100, 20, 250, 1, 10);
         e.position = new Position(0,2);
         a.position = new Position(0,1);
-        b.position = new Position(1,0);
         c.position = new Position(1,1);
         d.position = new Position(2,0);
-        f.position = new Position(1,3);
-        e.setMessageCallback((s)->{System.out.print(s);});
-        a.setMessageCallback((s)->{System.out.print(s);});
-        b.setMessageCallback((s)->{System.out.print(s);});
-        c.setMessageCallback((s)->{System.out.print(s);});
-        d.setMessageCallback((s)->{System.out.print(s);});
-        f.setMessageCallback((s)->{System.out.print(s);});
+        f.position = new Position(1,0);
+
         enemies.add(e);
         enemies.add(a);
-        enemies.add(b);
         enemies.add(c);
         enemies.add(d);
         enemies.add(f);
-        /*
-        enemyList.add(tileFactory.enemiesMap.get('s').get());
-        enemyList.add(tileFactory.enemiesMap.get('s').get());
-        enemyList.add(tileFactory.enemiesMap.get('s').get());
-        enemyList.add(tileFactory.enemiesMap.get('k').get());
-        enemyList.add(tileFactory.enemiesMap.get('Q').get()); // 4 - trap
-        enemyList.add(tileFactory.enemiesMap.get('w').get());
-        enemyList.add(tileFactory.enemiesMap.get('z').get());
-        enemyList.add(tileFactory.enemiesMap.get('q').get());
 
-        enemyList.get(0).initialize(new Position(10,13));
-        enemyList.get(1).initialize(new Position(9,9));
-        enemyList.get(2).initialize(new Position(9,10));
-        enemyList.get(3).initialize(new Position(10,9));
-        enemyList.get(4).initialize(new Position(8,10));
-        enemyList.get(5).initialize(new Position(11,10));
-        enemyList.get(6).initialize(new Position(14,13));
-        enemyList.get(7).initialize(new Position(13,9));*/
+        for(Enemy enemy : enemies) {
+            enemy.setMovementCallback((m,s)->{});
+            enemy.setMessageCallback((s)->{System.out.print(s);});
+            enemy.setDeathCallback(()->{});
+        }
+
     }
 
 
 
     @BeforeEach
     void setUp() {
+        player = new Warrior("Jon Snow", 300, 30, 4, 3);
         player.initialize(new Position(0,0),(msg) -> System.out.println(msg),()->{} ,()->'s');
+        player.setMovementCallback((m,s)->{});
         initializeEnemies();
-        //initializeBoard();
-
     }
 
     @AfterEach
@@ -93,6 +72,17 @@ class PlayerTest {
     }
 
 
+
+    @Test
+    void visit_trap() {
+        enemies.get(4).setDefense(0);
+        player.setAttack(1000);
+        while(enemies.get(4).getResource().getCurrentHealth()>0){
+            enemies.get(4).visit(player);
+        }
+
+        Assertions.assertEquals(0,enemies.get(4).getResource().getCurrentHealth());
+    }
 
 
     @Test
@@ -105,13 +95,6 @@ class PlayerTest {
         Assertions.assertEquals(row & col, true);
     }
 
-    @Test
-    void visit() {
-    }
-
-    @Test
-    void testVisit() {
-    }
 
     @Test
     void levelUp() {
@@ -125,22 +108,65 @@ class PlayerTest {
         player.heal(230);
         player.CastAbility(enemies);
 
-        Assertions.assertEquals(260,player.getResource().getCurrentHealth());
+        Assertions.assertEquals(270,player.getResource().getCurrentHealth());
     }
 
     @Test
-    void acceptAbility() {
+    void castAbility_one_enemy() {
+        player.heal(230);
+        List<Enemy> enemyList = new ArrayList<>();
+        enemies.get(0).setDefense(0);
+        enemyList.add(enemies.get(0));
+        player.CastAbility(enemyList);
+        int damage = (int)Math.round(0.1*player.getResource().getHealthCapacity());
+
+        Assertions.assertEquals(200-damage,enemyList.get(0).getResource().getCurrentHealth());
+    }
+
+    @Test
+    void visit_enemy() {
+        enemies.get(1).setDefense(0);
+        enemies.get(1).visit(player);
+
+        Assertions.assertTrue(enemies.get(1).getResource().getCurrentHealth()<=200);
 
     }
 
     @Test
-    void resourcesOnTick() {
+    void visit_player() {
+        player.setDefense(0);
+        player.visit(enemies.get(0));
+
+        Assertions.assertTrue(player.getResource().getCurrentHealth()<300);
 
     }
 
     @Test
-    void visibilityOnTick() {
+    void visit_player_attack_zero() {
+        enemies.get(0).setAttack(0);
+        player.visit(enemies.get(0));
 
+        Assertions.assertTrue(player.getResource().getCurrentHealth()==300);
+
+    }
+
+
+    @Test
+    void player_death() {
+        while(player.getResource().getCurrentHealth()>0){
+            player.visit(enemies.get(3));
+        }
+
+        Assertions.assertTrue(!player.alive());
+    }
+
+    @Test
+    void monster_death() {
+        while(enemies.get(0).getResource().getCurrentHealth()>0){
+            enemies.get(0).visit(player);
+        }
+
+        Assertions.assertEquals(0,enemies.get(0).getResource().getCurrentHealth());
     }
 
 

@@ -33,7 +33,7 @@ public class Warrior extends Player {
             messageCallback.send(this.name+" have have used Avengers Shield"+"\n");
             int index = (int)Math.round(NumericGenerator.getInstance().nextDouble()*(closeEnemies.size()-1));
             if(!closeEnemies.isEmpty()) {
-                closeEnemies.get(index).acceptAbility(this, (int) (Math.round(0.1 * warriorResource.getHealthCapacity())));
+                closeEnemies.get(index).acceptAbility(this, (int) (Math.round(0.1 * resource.getHealthCapacity())));
                 resource.setCurrentHealth(Math.min((resource.getCurrentHealth()+ABILITY_HEALTH_BONUS*defense),resource.getHealthCapacity()));
             }
             else
