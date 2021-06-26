@@ -57,7 +57,7 @@ public class GameLevel {
             else{ //moving
                 Tile tileToInteract = gameBoard.findTile( new Position(player.getPosition().getRow()+nextPosition.getRow(),player.getPosition().getCol()+nextPosition.getCol()) );
                 player.interact(tileToInteract);
-                if(tileToInteract.getTile() == '.'){
+                if(tileToInteract.isEmpty()){
                     gameBoard.SwitchPositions(tileToInteract,player);
                 }
             }

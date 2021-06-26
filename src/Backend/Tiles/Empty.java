@@ -20,7 +20,7 @@ public class Empty extends Tile {
         setPosition(t);
     }
 
-
+    public boolean isEmpty() {return true;}
 
     public void visit(Player p){accept(p);}
     public void visit(Enemy e){accept(e);}

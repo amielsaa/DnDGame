@@ -24,6 +24,6 @@ public class Resource {
         currentHealth=newCurrentHealth;
     }
     public void setHealthCapacity(int newHealthCapacity){
-        currentHealth=newHealthCapacity;
+        healthCapacity=newHealthCapacity;
     }
 }

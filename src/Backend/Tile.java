@@ -9,6 +9,7 @@ import Backend.Utils.Position;
 public abstract class Tile implements Comparable<Tile> {
     protected char tile;
     public Position position;
+    public abstract boolean isEmpty();
 
     protected Tile(char tile, Position position){
         this.tile = tile;
