@@ -21,7 +21,10 @@ public class Resource {
         return this.currentHealth.toString()+"/"+healthCapacity.toString();
     }
     public void setCurrentHealth(int newCurrentHealth){
-        currentHealth=newCurrentHealth;
+        if(newCurrentHealth>0)
+            currentHealth=newCurrentHealth;
+        else
+            currentHealth=0;
     }
     public void setHealthCapacity(int newHealthCapacity){
         healthCapacity=newHealthCapacity;
