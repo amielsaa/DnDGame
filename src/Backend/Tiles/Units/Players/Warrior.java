@@ -14,9 +14,10 @@ public class Warrior extends Player {
     protected static final int ATTACK_BONUS = 2;
     protected static final int DEFENSE_BONUS = 1;
     protected static final int HEALTH_BONUS = 5;
+    protected static final int ABILITY_HEALTH_BONUS = 10;
     public Warrior(String name, int healthCapacity, int attack, int defense, int cooldown) {
         super(name, healthCapacity, attack, defense);
-        warriorResource = new WarriorResource(healthCapacity,healthCapacity,cooldown,defense);
+        warriorResource = new WarriorResource(healthCapacity,healthCapacity,cooldown);
 
     }
 
@@ -34,6 +35,7 @@ public class Warrior extends Player {
             if(!closeEnemies.isEmpty())
                 closeEnemies.get(index).acceptAbility(this,(int)(Math.round(0.1*warriorResource.getHealthCapacity())));
             warriorResource.castedAbility();
+            resource.setCurrentHealth(Math.min((resource.getCurrentHealth()+ABILITY_HEALTH_BONUS*defense),resource.getHealthCapacity()));
 
         }
         else
