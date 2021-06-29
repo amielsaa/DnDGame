@@ -26,8 +26,7 @@ public class GameLevel {
     public static FileParser fileParser;
 
     private static GameLevel instance;
-    //TODO
-    //המשחק בנוי על לעשות לולאת while אחת גדולה שכל עוד השחקן לא מת אני מקבל קלט  תנועה או קאסט אביליטי וכל השאר בהתאם.
+
 
     private GameLevel() {
         fileParser = new FileParser();
@@ -70,19 +69,13 @@ public class GameLevel {
     }
 
     private void cheatShit(String cheat) {
+        //for gay pride month
         if(cheat.equals("GAYPOWER")) {
             player.setAttack(player.getAttack()+500);
             player.setDefense(player.getDefense()+500);
             player.setHealth(player.getResource().getHealthCapacity()+1000);
             player.heal(player.getResource().getCurrentHealth()+1000);
         }
-        else if(cheat.equals("MAYONAISE"))
-            player.setAttack(player.getAttack()+500);
-        else if(cheat.equals("KETCHUP")) {
-            player.setHealth(player.getResource().getHealthCapacity()+1000);
-            player.heal(player.getResource().getCurrentHealth()+1000);
-        } else if(cheat.equals("PEENUT"))
-            player.setDefense(player.getDefense()+500);
 
     }
 
@@ -151,30 +144,6 @@ public class GameLevel {
         gameBoard.Printall();
 
 
-//        String c ="";
-//        Scanner scanner= new Scanner(System.in);
-//
-//        while(!c.equals("q")) {
-//            c=scanner.next();
-//            if(c.equals("d")) {
-//                System.out.println(p.position);
-//                System.out.println(p.position.getRow());
-//                Tile t =gameBoard.findTile(new Position(p.position.getRow(),p.position.getCol()+1));
-//                if(t!= null)
-//                    p.SwitchPosition(t);
-//                gameBoard.SwitchPositions(p,t);
-//            }
-//            gameBoard.Printall();
-//
-//        }
-//        p.setMessageCallback((s)->{System.out.print(s);});
-//
-//        Player x = new Warrior("ariya", 500, 500, 500);
-//        x.setMessageCallback((s)->{System.out.print(s);});
-//        Enemy e=new Monster('k',"fuck",500,500,500,3,3);
-//        e.setMessageCallback((s)->{System.out.print(s);});
-//        e.visit(x);
-//        x.CastAbility();
 
 
     }
@@ -184,44 +153,5 @@ public class GameLevel {
         return String.format("%s\n%s", gameBoard, player.describe());
     }
 
-//    public static void main(String[] args) {
-////        if (args.length<=0) {
-////            System.out.print("main is a void");
-////            return;
-////        }
-////        String folder=args[0];
-////        File levelsDir = new File(folder);
-////        List<File> levelFiles = null;
-////        if (levelsDir.exists())
-////            levelFiles = Arrays.stream(levelsDir.listFiles())
-////                    .filter(s -> s.getName().matches("^level\\d+\\.txt$"))
-////                   .collect(Collectors.toList());
-////        GameBoard board = fileParser.parseLevel(levelFiles.get(0));
-////
-////        String c ="";
-////        Scanner scanner= new Scanner(System.in);
-////        board.Printall();
-////        Player p=fileParser.player;
-////        while(!c.equals("q")) {
-////            c=scanner.next();
-////            if(c.equals("d")) {
-////                System.out.println(p.position);
-////                System.out.println(p.position.getRow());
-////                Tile t =board.findTile(new Position(p.position.getRow(),p.position.getCol()+1));
-////                if(t!= null)
-////                p.SwitchPosition(t);
-////                board.SwitchPositions(p,t);
-////            }
-////                board.Printall();
-////
-////        }
-////        p.setMessageCallback((s)->{System.out.print(s);});
-////
-////        Player x = new Warrior("ariya", 500, 500, 500);
-////        x.setMessageCallback((s)->{System.out.print(s);});
-////        Enemy e=new Monster('k',"fuck",500,500,500,3,3);
-////        e.setMessageCallback((s)->{System.out.print(s);});
-////        e.visit(x);
-////        x.CastAbility();
-////    }
+
 }

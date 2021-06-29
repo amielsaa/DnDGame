@@ -59,19 +59,5 @@ public class TileFactory {
         return playersList.stream().map(Supplier::get).collect(Collectors.toList());
     }
 
-    //public Backend.Tiles.Units.Enemy produceEnemy(char tile, Backend.Utils.Position position, MessageCallback messageCallback, Backend.Callbacks.DeathCallback enemyDeathCallback) {
-     //   ...
-    //}
 
-    //public Backend.Tiles.Units.Player producePlayer(int idx){
-	//	...
-    //}
-
-   // public Backend.Tiles.Empty produceEmpty(Backend.Utils.Position position){
-    //    ...
-   // }
-
-   // public Backend.Tiles.Wall produceWall(Backend.Utils.Position position){
-   //     ...
-   // }
 }

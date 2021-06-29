@@ -77,9 +77,9 @@ public abstract class Player extends Unit implements HeroicUnit {
     // When the player dies
     @Override
     public void onDeath(Position p) {
-        messageCallback.send("You lost. but you can always try again");
-        // Use deathCallback to alert the level manager
+
         deathCallback.call();
+
     }
 
     // Backend.Tiles.Units.Player level up
